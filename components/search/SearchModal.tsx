@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { X, Search, ArrowRight, Package, HeartPulse } from "lucide-react";
 
 import { products } from "@/data/products";
@@ -30,6 +31,7 @@ export default function SearchModal({
   open,
   onClose,
 }: Props) {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [recentSearches, setRecentSearches] =
     useState<string[]>(recentDefault);
@@ -163,7 +165,7 @@ export default function SearchModal({
     saveRecentSearch(query);
     onClose();
 
-    window.open(`/shop/${id}`, "_blank");
+    router.push(`/shop/${id}`);
   };
 
   /* =========================================
@@ -174,7 +176,7 @@ export default function SearchModal({
     saveRecentSearch(query);
     onClose();
 
-    window.open(`/treatments/${slug}`, "_blank");
+    router.push(`/treatments/${slug}`);
   };
 
   /* =========================================
@@ -205,22 +207,16 @@ export default function SearchModal({
     saveRecentSearch(value);
 
     if (searchResults.products.length > 0) {
-      window.open(
-        `/shop/${searchResults.products[0].id}`,
-        "_blank"
-      );
-
       onClose();
+      router.push(`/shop/${searchResults.products[0].id}`);
       return;
     }
 
     if (searchResults.treatments.length > 0) {
-      window.open(
-        `/treatments/${searchResults.treatments[0].slug}`,
-        "_blank"
-      );
-
       onClose();
+      router.push(
+        `/treatments/${searchResults.treatments[0].slug}`
+      );
     }
   };
 

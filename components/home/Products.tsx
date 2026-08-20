@@ -127,7 +127,6 @@ export default function ProductCard({ item }: Props) {
 
         <Link
           href={`/shop/${item.id}`}
-          target="_blank"
           className="details-link"
         >
           <button className="details-btn">

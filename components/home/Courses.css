@@ -1,0 +1,783 @@
+/* =====================================================
+   COURSES SECTION
+===================================================== */
+
+.courses-section{
+    position:relative;
+    padding:80px 0;
+    background:linear-gradient(180deg,#f8fbf8 0%,#ffffff 100%);
+    overflow:hidden;
+}
+
+.courses-section::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(11,93,59,.05);
+    top:-180px;
+    left:-140px;
+    filter:blur(90px);
+}
+
+.courses-section::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(201,162,39,.06);
+    bottom:-180px;
+    right:-140px;
+    filter:blur(90px);
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.courses-grid{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:32px;
+    margin-top:48px;
+    align-items:stretch;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.course-card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    height:100%;
+    border:1px solid rgba(11,93,59,.09);
+    box-shadow:
+        0 1px 2px rgba(8,60,42,.04),
+        0 12px 24px -8px rgba(8,60,42,.10);
+    transition:transform .35s cubic-bezier(.22,.9,.32,1),
+               box-shadow .35s cubic-bezier(.22,.9,.32,1),
+               border-color .35s ease;
+}
+
+.course-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(11,93,59,.16);
+    box-shadow:
+        0 1px 2px rgba(8,60,42,.05),
+        0 24px 48px -12px rgba(8,60,42,.20);
+}
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.course-badge{
+    position:absolute;
+    top:16px;
+    left:16px;
+    z-index:5;
+    background:linear-gradient(135deg,#C9A227,#E0C04C);
+    color:#fff;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    box-shadow:0 4px 10px rgba(201,162,39,.35);
+}
+
+/* =====================================================
+   WISHLIST
+===================================================== */
+
+.wishlist-btn{
+    position:absolute;
+    top:16px;
+    right:16px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(6px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:5;
+    transition:background .25s ease, transform .2s ease, box-shadow .25s ease;
+    box-shadow:0 4px 12px rgba(8,60,42,.10);
+}
+
+.wishlist-btn svg{
+    color:#0B5D3B;
+    width:18px;
+    height:18px;
+    transition:color .25s ease;
+}
+
+.wishlist-btn:hover{
+    background:#0B5D3B;
+    transform:scale(1.08);
+    box-shadow:0 6px 16px rgba(11,93,59,.30);
+}
+
+.wishlist-btn:active{
+    transform:scale(.96);
+}
+
+.wishlist-btn:hover svg{
+    color:#fff;
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.course-image{
+    position:relative;
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    background:radial-gradient(120% 120% at 50% 0%,#F3F9F5 0%,#EAF4EE 55%,#ffffff 100%);
+    border-bottom:1px solid rgba(11,93,59,.06);
+    overflow:hidden;
+}
+
+.course-image img{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:none;
+    max-height:none;
+    object-fit:cover !important;
+    object-position:center;
+    filter:none;
+    transition:transform .4s cubic-bezier(.22,.9,.32,1);
+}
+
+.course-card:hover .course-image img{
+    transform:scale(1.06);
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.course-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:24px 20px 20px;
+    gap:0;
+}
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.course-content h3{
+    font-size:19px;
+    font-weight:700;
+    color:#083C2A;
+    line-height:1.3;
+    letter-spacing:-.01em;
+    margin-bottom:8px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    transition:color .3s ease;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.course-content p{
+    color:#64748B;
+    font-size:13.5px;
+    line-height:1.6;
+    margin-bottom:16px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.rating-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:16px;
+    padding-bottom:16px;
+    border-bottom:1px solid rgba(11,93,59,.08);
+}
+
+.stars{
+    display:flex;
+    align-items:center;
+    gap:3px;
+}
+
+.stars svg{
+    color:#D4A017;
+    width:15px;
+    height:15px;
+}
+
+.rating{
+    font-size:14px;
+    font-weight:700;
+    color:#0B5D3B;
+    letter-spacing:-.01em;
+}
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.price-row{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    margin-bottom:16px;
+}
+
+.price{
+    font-size:26px;
+    font-weight:800;
+    color:#0B5D3B;
+    line-height:1;
+    letter-spacing:-.02em;
+}
+
+.old-price{
+    font-size:14px;
+    color:#9CA3AF;
+    text-decoration:line-through;
+    font-weight:500;
+}
+
+/* =====================================================
+   CHIPS
+===================================================== */
+
+.course-meta{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:10px;
+    column-gap:10px;
+    margin-bottom:20px;
+}
+
+.chip{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:1 1 calc(50% - 5px);
+    gap:6px;
+    background:#F3F8F4;
+    color:#0B5D3B;
+    border:1px solid rgba(11,93,59,.06);
+    border-radius:999px;
+    padding:7px 12px;
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:5px;
+    transition:background .3s ease, color .3s ease, border-color .3s ease;
+}
+
+.chip svg{
+    width:13px;
+    height:13px;
+    color:#D4A017;
+    flex-shrink:0;
+}
+
+/* =====================================================
+   BUTTON AREA
+===================================================== */
+
+.button-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin-top:auto;
+    margin-bottom:8px;
+}
+
+/* =====================================================
+   COMMON BUTTON STYLE
+===================================================== */
+
+.cart-btn,
+.buy-btn,
+.details-btn{
+    border:none;
+    height:44px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    cursor:pointer;
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:-.01em;
+    transition:transform .22s cubic-bezier(.22,.9,.32,1),
+               box-shadow .25s ease,
+               background .25s ease,
+               color .25s ease;
+}
+
+.cart-btn:active,
+.buy-btn:active,
+.details-btn:active{
+    transform:translateY(0) scale(.98);
+}
+
+/* =====================================================
+   ADD TO CART
+===================================================== */
+
+.cart-btn{
+    background:#EEF7F2;
+    color:#0B5D3B;
+    border:1px solid rgba(11,93,59,.10);
+}
+
+.cart-btn:hover{
+    background:#0B5D3B;
+    color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px -6px rgba(11,93,59,.35);
+}
+
+/* =====================================================
+   BUY NOW
+===================================================== */
+
+.buy-btn{
+    color:#fff;
+    background:linear-gradient(135deg,#C9A227,#E5C85B);
+}
+
+.buy-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 22px -6px rgba(201,162,39,.45);
+}
+
+/* =====================================================
+   DETAILS BUTTON
+===================================================== */
+
+.details-btn{
+    width:100%;
+    margin-top:4px;
+    background:#083C2A;
+    color:#fff;
+}
+
+.details-btn:hover{
+    background:#0B5D3B;
+    transform:translateY(-2px);
+    box-shadow:0 12px 26px -6px rgba(11,93,59,.35);
+}
+
+/* =====================================================
+   ICONS
+===================================================== */
+
+.cart-btn svg,
+.buy-btn svg,
+.details-btn svg{
+    width:17px;
+    height:17px;
+}
+
+/* =====================================================
+   CARD HOVER EFFECT
+===================================================== */
+
+.course-card:hover .course-content h3{
+    color:#0B5D3B;
+}
+
+.course-card:hover .price{
+    color:#C9A227;
+}
+
+.course-card:hover .chip{
+    background:#0B5D3B;
+    color:#fff;
+    border-color:#0B5D3B;
+}
+
+.course-card:hover .chip svg{
+    color:#FFD66B;
+}
+
+/* =====================================================
+   SMOOTH TRANSITIONS
+===================================================== */
+
+.treatment-modal,
+.treatment-modal *{
+    transition:
+        background .30s ease,
+        color .30s ease,
+        border-color .30s ease,
+        transform .30s ease,
+        box-shadow .30s ease;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1200px){
+
+    .courses-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:24px;
+    }
+
+    .course-image{
+        height:190px;
+    }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+    .courses-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .course-image{
+        height:180px;
+    }
+
+    .course-content{
+        padding:20px 16px 16px;
+    }
+
+    .course-content h3{
+        font-size:18px;
+    }
+
+    .price{
+        font-size:23px;
+    }
+
+    .chip{
+        font-size:11.5px;
+        padding:6px 11px;
+    }
+}
+
+/* ---------- Mobile (Amazon-style compact 2-up grid) ---------- */
+
+@media (max-width:768px){
+
+    .courses-section{
+        padding:56px 0;
+    }
+
+    .courses-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:16px;
+        margin-top:32px;
+         padding:0 12px;   /* <-- ye add karo, sides gap ke liye */
+    }
+
+    .course-card{
+        border-radius:16px;
+    }
+
+    .course-image{
+        height:140px;
+        padding:16px;
+    }
+
+    .course-content{
+        padding:16px 12px 12px;
+    }
+
+    .course-content h3{
+        font-size:14.5px;
+        margin-bottom:6px;
+        -webkit-line-clamp:2;
+    }
+
+    .course-content p{
+        font-size:12px;
+        line-height:1.5;
+        margin-bottom:12px;
+        -webkit-line-clamp:2;
+    }
+
+    .rating-row{
+        margin-bottom:12px;
+        padding-bottom:12px;
+    }
+
+    .rating{
+        font-size:12.5px;
+    }
+
+    .stars svg{
+        width:12px;
+        height:12px;
+    }
+
+    .price-row{
+        gap:6px;
+        margin-bottom:12px;
+    }
+
+    .price{
+        font-size:19px;
+    }
+
+    .old-price{
+        font-size:11.5px;
+    }
+
+    .course-meta{
+        row-gap:8px;
+        column-gap:8px;
+        margin-bottom:14px;
+    }
+
+    .chip{
+        font-size:10.5px;
+        padding:5px 9px;
+    }
+
+    .chip svg{
+        width:11px;
+        height:11px;
+    }
+
+    .button-row{
+        gap:8px;
+    }
+
+    .cart-btn,
+    .buy-btn,
+    .details-btn{
+        height:38px;
+        font-size:11.5px;
+        border-radius:10px;
+        gap:5px;
+    }
+
+    .cart-btn svg,
+    .buy-btn svg,
+    .details-btn svg{
+        width:15px;
+        height:15px;
+    }
+
+    .wishlist-btn{
+        width:32px;
+        height:32px;
+        top:10px;
+        right:10px;
+    }
+
+    .wishlist-btn svg{
+        width:15px;
+        height:15px;
+    }
+
+    .course-badge{
+        top:10px;
+        left:10px;
+        font-size:10px;
+        padding:5px 10px;
+    }
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+    .courses-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+        padding:0 8px;   /* <-- ye add karo */
+    }
+
+    .course-image{
+        height:118px;
+        padding:12px;
+    }
+
+    .course-content{
+        padding:14px 10px 10px;
+    }
+
+    .course-content h3{
+        font-size:13.5px;
+    }
+
+    .course-content p{
+        display:none;
+    }
+
+    .rating-row{
+        margin-bottom:10px;
+        padding-bottom:10px;
+    }
+
+    .price-row{
+        margin-bottom:10px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .old-price{
+        font-size:10.5px;
+    }
+
+    .course-meta{
+        margin-bottom:12px;
+    }
+
+    .chip{
+        font-size:9.5px;
+        padding:4px 8px;
+    }
+
+    .cart-btn,
+    .buy-btn,
+    .details-btn{
+        height:36px;
+        font-size:10.5px;
+    }
+}
+
+/* =====================================================
+   MODAL RESPONSIVE
+===================================================== */
+
+@media (max-width:1024px){
+
+    .treatment-modal{
+        grid-template-columns:1fr;
+        max-width:720px;
+    }
+
+    .modal-image{
+        min-height:300px;
+    }
+}
+
+@media (max-width:768px){
+
+    .modal-overlay{
+        padding:12px;
+    }
+
+    .treatment-modal{
+        width:100%;
+        max-height:95vh;
+        border-radius:18px;
+    }
+
+    .modal-image{
+        min-height:220px;
+        padding:20px;
+    }
+
+    .modal-content{
+        padding:22px;
+    }
+
+    .modal-content h2{
+        font-size:26px;
+    }
+
+    .modal-price h3{
+        font-size:28px;
+    }
+
+    .modal-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .whatsapp-btn{
+        height:52px;
+    }
+}
+
+@media (max-width:480px){
+
+    .modal-content{
+        padding:18px;
+    }
+
+    .modal-content h2{
+        font-size:22px;
+    }
+
+    .modal-description{
+        font-size:14px;
+    }
+
+    .modal-section h4{
+        font-size:17px;
+    }
+
+    .close-btn{
+        width:40px;
+        height:40px;
+    }
+}
+
+/* =====================================================
+   PREMIUM SCROLLBAR
+===================================================== */
+
+.treatment-modal::-webkit-scrollbar{
+    width:7px;
+}
+
+.treatment-modal::-webkit-scrollbar-track{
+    background:#EEF7F2;
+}
+
+.treatment-modal::-webkit-scrollbar-thumb{
+    background:#0B5D3B;
+    border-radius:50px;
+}
+
+.treatment-modal::-webkit-scrollbar-thumb:hover{
+    background:#083C2A;
+}

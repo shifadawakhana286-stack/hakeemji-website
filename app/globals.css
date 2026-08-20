@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root{
+  --primary:#0E5C3B;
+  --dark:#08472E;
+  --gold:#D4A017;
+  --light:#FCFBF8;
+  --text:#1B1B1B;
+}
+
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  scrollbar-gutter:stable;
+}
+
+body{
+  background:var(--light);
+  color:var(--text);
+  font-family:var(--font-poppins);
+  overflow-x:hidden;
+  min-width:0;
+}
+
+h1,h2,h3,h4,h5{
+  font-family:var(--font-playfair);
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img,video{
+  max-width:100%;
+  display:block;
+}
+
+/* Prevent grid/flex children from forcing overflow via intrinsic min-size */
+@layer base {
+  *, *::before, *::after {
+    min-width:0;
+  }
+}

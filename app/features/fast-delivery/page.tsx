@@ -8,7 +8,6 @@ import {
   MapPin,
   MessageCircle,
   Package,
-  ShieldCheck,
   ShoppingBag,
   Truck,
 } from "lucide-react";

@@ -41,6 +41,8 @@ export function LanguageProvider({
       localStorage.getItem("language") as Language;
 
     if (saved) {
+      // Language storage must load after hydration to avoid server/client markup differences.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLanguage(saved);
     }
   }, []);

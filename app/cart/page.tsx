@@ -84,7 +84,7 @@ Thank You.`
 
 <p>
 
-Looks like you haven't added any herbal medicines yet.
+  Looks like you haven&apos;t added any herbal medicines yet.
 
 </p>
 

@@ -11,7 +11,7 @@ import {
 
 import { Product } from "@/data/products";
 
-export interface CartItem extends Product {
+export interface CartItem extends Omit<Product, "quantity"> {
   quantity: number;
 }
 
@@ -43,6 +43,8 @@ export function CartProvider({
       const storedCart = localStorage.getItem("cart");
 
       if (storedCart) {
+        // Cart storage must load after hydration to avoid server/client markup differences.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setCart(JSON.parse(storedCart));
       }
     } catch (error) {

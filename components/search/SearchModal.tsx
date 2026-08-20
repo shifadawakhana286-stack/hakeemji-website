@@ -7,8 +7,6 @@ import { X, Search, ArrowRight, Package, HeartPulse } from "lucide-react";
 import { products } from "@/data/products";
 import { treatments } from "@/data/treatments";
 
-type Treatment = (typeof treatments)[number];
-
 interface Props {
   open: boolean;
   onClose: () => void;
@@ -96,11 +94,9 @@ export default function SearchModal({
         product.description,
         product.shortDescription,
         product.seoDescription,
-        ...product.ingredients,
-        ...product.uses,
-      ]
-        .join(" ")
-        .toLowerCase();
+        product.ingredients,
+        product.uses,
+      ].join(" ").toLowerCase();
 
       return searchableText.includes(searchText);
     });
@@ -115,10 +111,10 @@ export default function SearchModal({
         treatment.shortDescription,
         treatment.details,
         treatment.doctorNote,
-        ...treatment.symptoms,
-        ...treatment.medicines,
-        ...treatment.benefits,
-        ...treatment.ingredients,
+        treatment.symptoms,
+        treatment.medicines,
+        treatment.benefits,
+        treatment.ingredients,
       ]
         .join(" ")
         .toLowerCase();

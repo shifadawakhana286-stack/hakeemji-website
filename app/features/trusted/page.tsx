@@ -283,7 +283,7 @@ export default function TrustedPage() {
   transition-transform
   duration-700
   ${
-    certificate.rotation === 180
+    certificate.rotation === "180"
       ? "rotate-180"
       : ""
   }

@@ -73,7 +73,6 @@ export default function NaturalPage() {
 
               <Link
                 href="/appointment"
-                target="_blank"
                 className="btn-natural"
               >
 
@@ -83,7 +82,6 @@ export default function NaturalPage() {
 
               <Link
                 href="/shop"
-                target="_blank"
                 className="btn-outline-natural"
               >
 

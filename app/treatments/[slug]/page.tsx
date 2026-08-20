@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { treatments } from "@/data/treatments";
+import BackHomeLink from "@/components/common/BackHomeLink";
 
 // Components (Abhi banayenge next step me)
 import ProductGallery from "./components/ProductGallery";
@@ -33,6 +34,8 @@ export default async function TreatmentPage({ params }: Props) {
 
   return (
     <main className="product-page">
+
+      <BackHomeLink />
 
       {/* Breadcrumb */}
       <div className="breadcrumb">

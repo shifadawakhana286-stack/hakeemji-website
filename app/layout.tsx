@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { LanguageProvider } from "@/context/LanguageContext";
 import { CartProvider } from "@/context/CartContext";
+import FloatingButtons from "@/components/layout/FloatingButtons";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,6 +21,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Shifa Dawakhana",
   description: "Authentic Unani Healthcare",
+  icons: {
+    icon: "/logos/logo.png",
+    shortcut: "/logos/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +40,7 @@ export default function RootLayout({
             {children}
           </CartProvider>
         </LanguageProvider>
+        <FloatingButtons />
       </body>
     </html>
   );

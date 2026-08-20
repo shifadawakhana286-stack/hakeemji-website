@@ -71,14 +71,6 @@ export default function Navbar() {
                 <li key={item.title}>
                   <Link
                     href={item.href}
-                    target={
-                      item.title === "Courses" ? "_blank" : undefined
-                    }
-                    rel={
-                      item.title === "Courses"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
                     className="
                       relative
                       font-medium
@@ -252,14 +244,6 @@ export default function Navbar() {
                   <Link
                     key={item.title}
                     href={item.href}
-                    target={
-                      item.title === "Courses" ? "_blank" : undefined
-                    }
-                    rel={
-                      item.title === "Courses"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
                     onClick={() => setOpen(false)}
                     className="
                       border-b

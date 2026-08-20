@@ -31,6 +31,24 @@ a{
   color:inherit;
 }
 
+.floating-actions{
+  position:fixed;
+  right:calc(1rem + env(safe-area-inset-right));
+  bottom:calc(1rem + env(safe-area-inset-bottom));
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:.75rem;
+}
+
+@media (max-width:640px){
+  .floating-actions{
+    right:calc(.75rem + env(safe-area-inset-right));
+    bottom:calc(.75rem + env(safe-area-inset-bottom));
+  }
+}
+
 img,video{
   max-width:100%;
   display:block;

@@ -5,7 +5,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-6 right-6 z-[999] flex flex-col items-end gap-3">
+    <div className="floating-actions">
       {/* Phone */}
       <a
         href="tel:+917037305542"

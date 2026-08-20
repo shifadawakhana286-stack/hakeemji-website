@@ -45,7 +45,7 @@ const certificates = [
     issuer: "CupCure",
     detail: "Facial Cupping Training",
     category: "Cupping Therapy",
-    rotation: "180",
+    rotation: 180,
   },
   {
     image: "/certificates/authorized-letter.jpg",
@@ -61,7 +61,7 @@ const certificates = [
     issuer: "CupCure",
     detail: "Cupping Therapy Training",
     category: "Cupping Therapy",
-    rotation: "180",
+    rotation: 180,
   },
 ];
 

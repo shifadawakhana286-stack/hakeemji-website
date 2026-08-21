@@ -104,7 +104,7 @@ export default function Appointment() {
                   </h4>
 
                   <p className="text-gray-600">
-                    +91 98765 43210
+                    +91 70373 05542
                   </p>
                 </div>
 

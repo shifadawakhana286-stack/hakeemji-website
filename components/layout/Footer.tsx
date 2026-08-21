@@ -117,17 +117,17 @@ export default function Footer() {
 
                 <Phone className="text-[#C9A227] shrink-0" size={18} />
 
-                <span>+91 98765 43210</span>
+                <span>+91 70373 05542</span>
 
               </a>
 
-              <a href="mailto:info@shifadawakhana.com" className="flex items-center gap-3 text-white/80 transition hover:text-[#C9A227] min-w-0">
+              <a href="mailto:shifadawakhana286@gmail.com" className="flex items-center gap-3 text-white/80 transition hover:text-[#C9A227] min-w-0">
 
                 <Mail className="text-[#C9A227] shrink-0" size={18} />
 
                 <span className="break-all">
 
-                  info@shifadawakhana.com
+                  shifadawakhana286@gmail.com
 
                 </span>
 
@@ -138,9 +138,16 @@ export default function Footer() {
                 <MapPin className="text-[#C9A227] shrink-0 mt-1" size={18} />
 
                 <span>
-
-                  Meerut,
-                  Uttar Pradesh
+                <Link
+                    href="https://www.google.com/maps/place/Meerut,+Uttar+Pradesh/@28.9872622,77.6989603,12z/data=!3m1!4b1!4m6!3m5!1s0x390c64f457b66325:0x42faa83387a6be5e!8m2!3d28.9844618!4d77.7064137!16zL20vMDI1Zmo3?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition hover:text-[#C9A227]"
+                  >
+                    Meerut,
+                    Uttar Pradesh
+                  </Link>
+                  
 
                 </span>
 
@@ -163,7 +170,7 @@ export default function Footer() {
             <div className="flex flex-wrap gap-3">
 
               <a
-                href="#"
+                href="https://www.facebook.com/people/Shifa-Dawakhana/61557998630626/"
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
                 aria-label="Facebook"
               >

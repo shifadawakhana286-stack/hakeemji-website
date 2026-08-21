@@ -84,8 +84,8 @@ export default function Appointment() {
                   </h4>
 
                   <p className="text-gray-600">
-                    123 Abu Bakr Road,
-                    Meerut, Uttar Pradesh
+                    Near Bhumiya ka Pul, Mandir ke samne, Tower wali Market
+                    Meerut, Uttar Pradesh, 250002
                   </p>
                 </div>
 

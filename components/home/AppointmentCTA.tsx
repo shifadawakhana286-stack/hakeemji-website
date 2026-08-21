@@ -12,48 +12,48 @@ export default function Appointment() {
   return (
     <section
       id="appointment"
-      className="bg-[#0B5D3B] py-24 text-white"
+      className="bg-[#0B5D3B] py-14 sm:py-20 md:py-24 text-white"
     >
       <Container>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 items-center">
 
           {/* Left */}
           <div>
 
-            <span className="rounded-full bg-[#C9A227] px-5 py-2 text-black font-semibold">
+            <span className="inline-block rounded-full bg-[#C9A227] px-4 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm text-black font-semibold">
               Book Appointment
             </span>
 
-            <h2 className="mt-6 text-5xl font-bold leading-tight">
+            <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Book Your
               <span className="text-[#C9A227]">
                 {" "}Consultation
               </span>
             </h2>
 
-            <p className="mt-6 max-w-lg text-lg leading-8 text-white/80">
+            <p className="mt-4 sm:mt-6 max-w-lg text-sm sm:text-base md:text-lg leading-relaxed text-white/80">
               Consult our experienced Unani Hakeem
               for personalized treatment and natural
               healing solutions.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
 
               {/* Call Now */}
               <a
-                href="tel:+919876543210"
-                className="rounded-full bg-white px-8 py-4 font-semibold text-[#0B5D3B] transition hover:scale-105"
+                href="tel:+917037305542"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#0B5D3B] transition hover:scale-105"
               >
                 Call Now
               </a>
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/917017530506?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20book%20an%20appointment"
+                href="https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-[#C9A227] px-8 py-4 font-semibold text-white transition hover:scale-105"
+                className="inline-flex items-center justify-center rounded-full bg-[#C9A227] px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white transition hover:scale-105"
               >
                 WhatsApp
               </a>

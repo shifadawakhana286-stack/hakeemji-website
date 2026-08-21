@@ -7,21 +7,21 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-white py-20"
+      className="bg-white py-14 sm:py-16 md:py-20"
     >
       <Container>
 
         <div className="text-center">
 
           <SectionTitle 
-  title="Our"
-  highlight="Services"
-  subtitle="Traditional Unani therapies with modern care."
-/>
+            title="Our"
+            highlight="Services"
+            subtitle="Traditional Unani therapies with modern care."
+          />
 
         </div>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {services.map((service) => {
 

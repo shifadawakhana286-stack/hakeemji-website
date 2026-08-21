@@ -1,6 +1,9 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { TreatmentPackage } from "@/data/treatments";
+import { useCart } from "@/hooks/useCart";
 import {
   Star,
   Clock,
@@ -8,6 +11,8 @@ import {
   ShieldCheck,
   MessageCircle,
   ShoppingCart,
+  Check,
+  Zap,
 } from "lucide-react";
 
 interface ProductInfoProps {
@@ -17,6 +22,9 @@ interface ProductInfoProps {
 export default function ProductInfo({
   treatment,
 }: ProductInfoProps) {
+  const router = useRouter();
+  const { addToCart } = useCart();
+  const [isAdding, setIsAdding] = useState(false);
 
   const discountPercent =
     treatment.oldPrice
@@ -26,6 +34,19 @@ export default function ProductInfo({
             100
         )
       : treatment.discount;
+
+  const handleAddToCart = () => {
+    setIsAdding(true);
+    addToCart(treatment);
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
+  };
+
+  const handleBuyNow = () => {
+    addToCart(treatment);
+    router.push("/cart");
+  };
 
   return (
     <div className="product-info">
@@ -64,9 +85,11 @@ export default function ProductInfo({
           </span>
         )}
 
-        <span className="discount">
-          {discountPercent}% OFF
-        </span>
+        {discountPercent > 0 && (
+          <span className="discount">
+            {discountPercent}% OFF
+          </span>
+        )}
 
       </div>
 
@@ -104,17 +127,38 @@ export default function ProductInfo({
       {/* Action Buttons */}
       <div className="product-buttons">
 
-        <button className="buy-now-btn">
-          Buy Now
+        <button
+          type="button"
+          className="buy-now-btn"
+          onClick={handleBuyNow}
+          aria-label={`Buy ${treatment.title} now`}
+        >
+          <Zap size={18} />
+          <span>Buy Now</span>
         </button>
 
-        <button className="cart-btn">
-          <ShoppingCart size={18} />
-          Add to Cart
+        <button
+          type="button"
+          className="cart-btn"
+          onClick={handleAddToCart}
+          disabled={isAdding}
+          aria-label={`Add ${treatment.title} to cart`}
+        >
+          {isAdding ? (
+            <>
+              <Check size={18} />
+              <span>Added to Cart</span>
+            </>
+          ) : (
+            <>
+              <ShoppingCart size={18} />
+              <span>Add to Cart</span>
+            </>
+          )}
         </button>
 
         <a
-          href={`https://wa.me/91XXXXXXXXXX?text=Hello, I want to order ${encodeURIComponent(
+          href={`https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana,%20I%20want%20to%20know%20about%20${encodeURIComponent(
             treatment.title
           )}`}
           target="_blank"
@@ -122,7 +166,7 @@ export default function ProductInfo({
           className="whatsapp-btn"
         >
           <MessageCircle size={18} />
-          Order on WhatsApp
+          <span>WhatsApp Consultation</span>
         </a>
 
       </div>

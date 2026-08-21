@@ -33,19 +33,21 @@ a{
 
 .floating-actions{
   position:fixed;
-  right:calc(1rem + env(safe-area-inset-right));
-  bottom:calc(1rem + env(safe-area-inset-bottom));
-  z-index:9999;
+  right:calc(1rem + env(safe-area-inset-right, 0px));
+  bottom:calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index:9990;
   display:flex;
   flex-direction:column;
   align-items:flex-end;
-  gap:.75rem;
+  gap:.65rem;
+  pointer-events:auto;
 }
 
 @media (max-width:640px){
   .floating-actions{
-    right:calc(.75rem + env(safe-area-inset-right));
-    bottom:calc(.75rem + env(safe-area-inset-bottom));
+    right:calc(.75rem + env(safe-area-inset-right, 0px));
+    bottom:calc(.75rem + env(safe-area-inset-bottom, 0px));
+    gap:.5rem;
   }
 }
 

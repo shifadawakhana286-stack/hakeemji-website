@@ -18,7 +18,7 @@ export default function Shop({ limit }: ShopProps) {
           subtitle="Premium Unani medicines prepared with authentic herbs."
         />
 
-        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-2.5 sm:gap-4 md:mt-12 md:grid-cols-3 xl:grid-cols-4">
           {(limit ? products.slice(0, limit) : products).map((item) => (
             <ProductCard
               key={item.id}
@@ -29,10 +29,10 @@ export default function Shop({ limit }: ShopProps) {
 
         {/* Show All Products Button - Only on Home */}
         {limit && (
-          <div className="mt-12 flex justify-center">
+          <div className="mt-10 flex justify-center md:mt-12">
             <Link
               href="/shop"
-              className="group flex items-center gap-3 rounded-full bg-[#07583F] px-10 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#064A35] hover:shadow-xl"
+              className="group inline-flex items-center gap-3 rounded-full bg-[#07583F] px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#064A35] hover:shadow-xl md:px-10 md:py-4 md:text-lg"
             >
               <span>Show All Products</span>
 

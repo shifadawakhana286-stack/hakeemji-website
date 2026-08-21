@@ -30,13 +30,18 @@ export default function ProductDetails({ product }: Props) {
   const { addToCart } = useCart();
 
   const [selectedImage, setSelectedImage] = useState(0);
+  const [isAdding, setIsAdding] = useState(false);
 
   const relatedProducts = products
     .filter((item) => item.id !== product.id)
     .slice(0, 4);
 
   const handleAddToCart = () => {
+    setIsAdding(true);
     addToCart(product);
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
   };
 
   const handleBuyNow = () => {
@@ -146,16 +151,30 @@ export default function ProductDetails({ product }: Props) {
             <div className="action-buttons">
 
               <button
+                type="button"
                 className="cart-btn"
                 onClick={handleAddToCart}
+                disabled={isAdding}
+                aria-label={`Add ${product.name} to cart`}
               >
-                <ShoppingCart size={20} />
-                Add to Cart
+                {isAdding ? (
+                  <>
+                    <CheckCircle size={20} />
+                    Added to Cart
+                  </>
+                ) : (
+                  <>
+                    <ShoppingCart size={20} />
+                    Add to Cart
+                  </>
+                )}
               </button>
 
               <button
+                type="button"
                 className="buy-btn"
                 onClick={handleBuyNow}
+                aria-label={`Buy ${product.name} now`}
               >
                 <Zap size={18} />
                 Buy Now
@@ -164,7 +183,7 @@ export default function ProductDetails({ product }: Props) {
             </div>
 
             <a
-              href={`https://wa.me/917037305542?text=Hello, I want to order ${product.name}`}
+              href={`https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana,%20I%20want%20to%20order%20${encodeURIComponent(product.name)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn"

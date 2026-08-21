@@ -66,22 +66,22 @@ Thank you.
     <main className="min-h-screen bg-[#F8FAF7]">
 
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden bg-[#083C2A] px-6 py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#083C2A] px-4 py-14 sm:px-6 sm:py-20 md:py-28">
         {/* Background Glow */}
         <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#C9A227]/10 blur-3xl" />
         <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-[#0E6C42]/30 blur-3xl" />
 
         <div className="relative mx-auto max-w-5xl text-center">
-          <span className="mb-4 inline-block rounded-full border border-[#C9A227]/40 bg-[#C9A227]/10 px-5 py-2 text-sm font-medium tracking-wide text-[#E5C75A]">
+          <span className="mb-3 sm:mb-4 inline-block rounded-full border border-[#C9A227]/40 bg-[#C9A227]/10 px-4 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm font-medium tracking-wide text-[#E5C75A]">
             SHIFA DAWAKHANA
           </span>
 
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
             Book Your{" "}
             <span className="text-[#C9A227]">Appointment</span>
           </h1>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/70 md:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base leading-relaxed text-white/70 md:text-lg">
             Schedule a consultation with our experienced Hakeem.
             Fill in your details and send your appointment request directly
             through WhatsApp.
@@ -90,25 +90,25 @@ Thank you.
       </section>
 
       {/* ================= FORM SECTION ================= */}
-      <section className="px-5 py-12 md:px-6 md:py-20">
+      <section className="px-3 py-8 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-4xl">
 
-          <div className="overflow-hidden rounded-3xl border border-[#0B5D3B]/10 bg-white shadow-xl">
+          <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-[#0B5D3B]/10 bg-white shadow-xl">
 
             {/* Form Header */}
-            <div className="border-b border-gray-100 bg-[#F8FAF7] px-6 py-7 md:px-10">
-              <h2 className="text-2xl font-bold text-[#083C2A] md:text-3xl">
+            <div className="border-b border-gray-100 bg-[#F8FAF7] px-5 py-5 sm:px-8 sm:py-7 md:px-10">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#083C2A]">
                 Appointment Details
               </h2>
 
-              <p className="mt-2 text-sm text-gray-500">
+              <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-gray-500">
                 Please provide the following information to request your
                 appointment.
               </p>
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="px-6 py-8 md:px-10">
+            <form onSubmit={handleSubmit} className="px-5 py-6 sm:px-8 sm:py-8 md:px-10">
 
               <div className="grid gap-6 md:grid-cols-2">
 

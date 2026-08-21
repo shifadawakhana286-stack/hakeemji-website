@@ -29,9 +29,10 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollTop}
-      className="fixed bottom-8 left-8 z-[999] flex h-14 w-14 items-center justify-center rounded-full bg-[#0B5D3B] text-white shadow-xl transition-all hover:scale-110 hover:bg-[#C9A227]"
+      aria-label="Scroll back to top"
+      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-[999] flex h-11 w-11 sm:h-13 sm:w-13 items-center justify-center rounded-full bg-[#0B5D3B] text-white shadow-xl transition-all hover:scale-110 hover:bg-[#C9A227]"
     >
-      <ChevronUp size={28} />
+      <ChevronUp className="h-5 w-5 sm:h-6 sm:w-6" />
     </button>
   );
 }

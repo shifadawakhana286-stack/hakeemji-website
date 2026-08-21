@@ -234,10 +234,15 @@ export default function SearchModal({
         fixed
         inset-0
         z-[9999]
-        bg-black/40
-        px-4
-        py-8
+        bg-black/50
+        p-2
+        sm:p-4
+        md:py-8
         backdrop-blur-sm
+        flex
+        items-start
+        justify-center
+        overflow-y-auto
       "
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) {
@@ -247,16 +252,20 @@ export default function SearchModal({
     >
       <div
         className="
-          mx-auto
-          mt-12
-          max-h-[85vh]
           w-full
           max-w-2xl
+          mt-2
+          sm:mt-10
+          md:mt-20
+          max-h-[92vh]
+          sm:max-h-[85vh]
           overflow-hidden
-          rounded-[30px]
+          rounded-2xl
+          sm:rounded-[28px]
           bg-white
           shadow-2xl
-          md:mt-24
+          flex
+          flex-col
         "
       >
 
@@ -271,17 +280,19 @@ export default function SearchModal({
             justify-between
             border-b
             border-gray-100
-            px-6
-            py-5
+            px-4
+            py-3.5
+            sm:px-6
+            sm:py-5
             md:px-8
           "
         >
           <div>
-            <h2 className="text-2xl font-bold text-[#083C2A]">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#083C2A]">
               Search
             </h2>
 
-            <p className="mt-1 text-sm text-gray-500">
+            <p className="text-xs sm:text-sm text-gray-500">
               Search medicines and treatments
             </p>
           </div>
@@ -289,10 +300,13 @@ export default function SearchModal({
           <button
             type="button"
             onClick={onClose}
+            aria-label="Close search"
             className="
               flex
-              h-10
-              w-10
+              h-9
+              w-9
+              sm:h-10
+              sm:w-10
               items-center
               justify-center
               rounded-full
@@ -305,7 +319,7 @@ export default function SearchModal({
               hover:text-white
             "
           >
-            <X size={20} />
+            <X size={18} />
           </button>
         </div>
 
@@ -313,7 +327,7 @@ export default function SearchModal({
             SEARCH INPUT
         ====================================== */}
 
-        <div className="px-6 pt-6 md:px-8">
+        <div className="px-4 pt-4 sm:px-6 sm:pt-6 md:px-8">
           <div
             className="
               flex
@@ -322,14 +336,15 @@ export default function SearchModal({
               border-2
               border-gray-100
               bg-[#F8F6F1]
-              px-5
+              px-4
+              sm:px-5
               transition
               focus-within:border-[#0B5D3B]
               focus-within:bg-white
             "
           >
             <Search
-              size={21}
+              size={19}
               className="shrink-0 text-[#0B5D3B]"
             />
 
@@ -345,7 +360,9 @@ export default function SearchModal({
               className="
                 w-full
                 bg-transparent
-                p-4
+                py-3
+                px-3
+                sm:p-4
                 text-sm
                 text-gray-800
                 outline-none
@@ -357,13 +374,15 @@ export default function SearchModal({
               <button
                 type="button"
                 onClick={() => setQuery("")}
+                aria-label="Clear query"
                 className="
                   text-gray-400
                   transition
                   hover:text-[#0B5D3B]
+                  p-1
                 "
               >
-                <X size={18} />
+                <X size={16} />
               </button>
             )}
           </div>

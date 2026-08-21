@@ -96,18 +96,21 @@ export default function Hakeem() {
 
             <div className="doctor-buttons">
 
-              <Button className="doctor-btn">
-                Book Appointment
-              </Button>
+              <Link href="/appointment">
+                <Button className="doctor-btn">
+                  Book Appointment
+                </Button>
+              </Link>
 
-              <Link
-                href="https://wa.me/919999999999"
+              <a
+                href="https://wa.me/917037305542?text=Hello%20Hakeem%20Sahab,%20I%20want%20to%20consult%20regarding%20my%20treatment."
                 target="_blank"
+                rel="noopener noreferrer"
                 className="doctor-outline-btn"
               >
                 <MessageCircle size={18} />
                 WhatsApp Consult
-              </Link>
+              </a>
 
             </div>
 

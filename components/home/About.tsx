@@ -156,18 +156,11 @@ export default function About() {
 
             </div>
 
-            <Link
-  href="/features/expert-hakeem"
-  target="_blank"
->
-
-  <Button className="about-btn">
-
-    Learn More
-
-  </Button>
-
-</Link>
+            <Link href="/features/expert-hakeem">
+              <Button className="about-btn">
+                Learn More
+              </Button>
+            </Link>
 
           </div>
 

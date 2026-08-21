@@ -101,19 +101,13 @@ export default function Hero() {
 
             <div className="hero-buttons">
 
-              <Link
-                href="/appointment"
-                target="_blank"
-              >
+              <Link href="/appointment">
                 <Button className="hero-btn-primary">
                   Book Appointment
                 </Button>
               </Link>
 
-              <Link
-                href="/shop"
-                target="_blank"
-              >
+              <Link href="/shop">
                 <Button
                   variant="outline"
                   className="hero-btn-outline"

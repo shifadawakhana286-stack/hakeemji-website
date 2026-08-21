@@ -44,13 +44,13 @@ export default function Footer() {
 
       <Container>
 
-        <div className="grid gap-12 py-20 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:gap-10 md:gap-12 py-12 sm:py-16 md:py-20 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Logo */}
 
-          <div>
+          <div className="min-w-0">
 
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-2xl sm:text-3xl font-bold">
 
               <span className="text-white">
                 Shifa
@@ -62,7 +62,7 @@ export default function Footer() {
 
             </h2>
 
-            <p className="mt-5 leading-8 text-white/70">
+            <p className="mt-4 leading-7 text-sm sm:text-base text-white/70">
 
               Premium Unani healthcare with
               authentic herbal medicine and
@@ -76,20 +76,20 @@ export default function Footer() {
 
           <div>
 
-            <h3 className="mb-6 text-xl font-semibold">
+            <h3 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold">
 
               Quick Links
 
             </h3>
 
-            <ul className="space-y-4">
+            <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base">
 
               {quickLinks.map((item)=>(
                 <li key={item.title}>
 
                   <Link
                     href={item.href}
-                    className="text-white/70 transition hover:text-[#C9A227]"
+                    className="text-white/70 transition hover:text-[#C9A227] py-1 inline-block"
                   >
                     {item.title}
                   </Link>
@@ -103,39 +103,39 @@ export default function Footer() {
 
           {/* Contact */}
 
-          <div>
+          <div className="min-w-0">
 
-            <h3 className="mb-6 text-xl font-semibold">
+            <h3 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold">
 
               Contact
 
             </h3>
 
-            <div className="space-y-5">
+            <div className="space-y-4 text-sm sm:text-base">
 
-              <div className="flex gap-3">
+              <a href="tel:+919876543210" className="flex items-center gap-3 text-white/80 transition hover:text-[#C9A227]">
 
-                <Phone className="text-[#C9A227]" />
+                <Phone className="text-[#C9A227] shrink-0" size={18} />
 
                 <span>+91 98765 43210</span>
 
-              </div>
+              </a>
 
-              <div className="flex gap-3">
+              <a href="mailto:info@shifadawakhana.com" className="flex items-center gap-3 text-white/80 transition hover:text-[#C9A227] min-w-0">
 
-                <Mail className="text-[#C9A227]" />
+                <Mail className="text-[#C9A227] shrink-0" size={18} />
 
-                <span>
+                <span className="break-all">
 
                   info@shifadawakhana.com
 
                 </span>
 
-              </div>
+              </a>
 
-              <div className="flex gap-3">
+              <div className="flex items-start gap-3 text-white/80">
 
-                <MapPin className="text-[#C9A227]" />
+                <MapPin className="text-[#C9A227] shrink-0 mt-1" size={18} />
 
                 <span>
 
@@ -154,49 +154,51 @@ export default function Footer() {
 
           <div>
 
-            <h3 className="mb-6 text-xl font-semibold">
+            <h3 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold">
 
               Follow Us
 
             </h3>
 
-           <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3">
 
-  <a
-    href="#"
-    className="rounded-full bg-white/10 p-3 transition hover:bg-[#C9A227]"
-    aria-label="Facebook"
-  >
-    <FaFacebookF size={20} />
-  </a>
+              <a
+                href="#"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
+                aria-label="Facebook"
+              >
+                <FaFacebookF size={18} />
+              </a>
 
-  <a
-    href="#"
-    className="rounded-full bg-white/10 p-3 transition hover:bg-[#C9A227]"
-    aria-label="Instagram"
-  >
-    <FaInstagram size={20} />
-  </a>
+              <a
+                href="https://www.instagram.com/shifa_dawakhana786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={18} />
+              </a>
 
-  <a
-    href="#"
-    className="rounded-full bg-white/10 p-3 transition hover:bg-[#C9A227]"
-    aria-label="YouTube"
-  >
-    <FaYoutube size={20} />
-  </a>
+              <a
+                href="#"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
+                aria-label="YouTube"
+              >
+                <FaYoutube size={18} />
+              </a>
 
-  <a
-    href="https://wa.me/917017530506"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="rounded-full bg-white/10 p-3 transition hover:bg-[#25D366]"
-    aria-label="WhatsApp"
-  >
-    <FaWhatsapp size={20} />
-  </a>
+              <a
+                href="https://wa.me/917037305542"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#25D366]"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp size={18} />
+              </a>
 
-</div>
+            </div>
 
           </div>
 
@@ -210,7 +212,7 @@ export default function Footer() {
 
         <Container>
 
-          <div className="flex flex-col items-center justify-between gap-4 py-6 text-sm text-white/60 md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-3 py-6 text-center text-xs sm:text-sm text-white/60 md:flex-row md:text-left">
 
             <p>
 
@@ -221,7 +223,7 @@ export default function Footer() {
 
             <p>
 
-              Designed with ❤️ using Next.js
+              Authentic Unani & Herbal Healthcare
 
             </p>
 

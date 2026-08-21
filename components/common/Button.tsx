@@ -18,9 +18,7 @@ export default function Button({
     <button
       onClick={onClick}
       className={clsx(
-         // Extra-wide premium button with more left & right padding.
-
-"group inline-flex items-center justify-center gap-3 rounded-full px-16 py-5 text-[14px] font-semibold tracking-[0.03em] shadow-lg transition-all duration-500",
+        "group inline-flex items-center justify-center gap-2 sm:gap-3 rounded-full px-7 sm:px-12 md:px-16 py-3.5 sm:py-4 md:py-5 text-[13px] sm:text-[14px] font-semibold tracking-[0.02em] shadow-lg transition-all duration-300",
 
         variant === "primary" &&
           "bg-[#C9A227] text-white hover:-translate-y-1 hover:shadow-xl",
@@ -38,7 +36,7 @@ export default function Button({
 
       <ArrowRight
         size={18}
-        className="transition-transform duration-300 group-hover:translate-x-1"
+        className="transition-transform duration-300 group-hover:translate-x-1 shrink-0"
       />
     </button>
   );

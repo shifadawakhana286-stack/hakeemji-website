@@ -5,11 +5,14 @@ import "./Products.css";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   ShoppingCart,
   Eye,
   ChevronLeft,
   ChevronRight,
+  Check,
+  Zap,
 } from "lucide-react";
 
 import { Product } from "@/data/products";
@@ -20,41 +23,55 @@ interface Props {
 }
 
 export default function ProductCard({ item }: Props) {
+  const router = useRouter();
   const [currentImage, setCurrentImage] = useState(0);
+  const [isAdding, setIsAdding] = useState(false);
 
   const { addToCart } = useCart();
 
-  const nextImage = () => {
+  const nextImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     setCurrentImage((prev) =>
       prev === item.images.length - 1 ? 0 : prev + 1
     );
   };
 
-  const prevImage = () => {
+  const prevImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     setCurrentImage((prev) =>
       prev === 0 ? item.images.length - 1 : prev - 1
     );
   };
 
-  const handleAddToCart = () => {
-  addToCart(item);
-};
-
-  const handleBuyNow = () => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsAdding(true);
     addToCart(item);
-    window.location.href = "/checkout";
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
+  };
+
+  const handleBuyNow = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(item);
+    router.push("/cart");
   };
 
   return (
     <div className="product-card">
       {/* Product Image */}
-
       <div className="product-image-wrapper">
         <Image
           src={item.images[currentImage]}
           alt={item.name}
-          width={700}
-          height={700}
+          width={500}
+          height={500}
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="product-image"
         />
 
@@ -63,15 +80,19 @@ export default function ProductCard({ item }: Props) {
             <button
               className="image-arrow left"
               onClick={prevImage}
+              aria-label="Previous image"
+              type="button"
             >
-              <ChevronLeft size={22} />
+              <ChevronLeft size={20} />
             </button>
 
             <button
               className="image-arrow right"
               onClick={nextImage}
+              aria-label="Next image"
+              type="button"
             >
-              <ChevronRight size={22} />
+              <ChevronRight size={20} />
             </button>
           </>
         )}
@@ -86,7 +107,11 @@ export default function ProductCard({ item }: Props) {
                     ? "dot active"
                     : "dot"
                 }
-                onClick={() => setCurrentImage(index)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setCurrentImage(index);
+                }}
               />
             ))}
           </div>
@@ -94,43 +119,58 @@ export default function ProductCard({ item }: Props) {
       </div>
 
       {/* Content */}
-
       <div className="product-content">
-        <h3 className="product-title">
+        <h3 className="product-title" title={item.name}>
           {item.name}
         </h3>
 
-        <p className="product-subtitle">
-          Premium Herbal Medicine
-        </p>
+        <div className="product-price-row">
+          <span className="product-price">₹{item.price}</span>
+          {item.oldPrice && (
+            <span className="product-old-price">₹{item.oldPrice}</span>
+          )}
+        </div>
 
         {/* Buttons */}
-
         <div className="product-actions">
           <button
+            type="button"
             className="cart-btn"
             onClick={handleAddToCart}
+            disabled={isAdding}
+            aria-label={`Add ${item.name} to cart`}
           >
-            <ShoppingCart size={18} />
-            <span>Add to Cart</span>
+            {isAdding ? (
+              <>
+                <Check size={16} />
+                <span>Added</span>
+              </>
+            ) : (
+              <>
+                <ShoppingCart size={16} />
+                <span>Add Cart</span>
+              </>
+            )}
           </button>
 
           <button
+            type="button"
             className="buy-btn"
             onClick={handleBuyNow}
+            aria-label={`Buy ${item.name} now`}
           >
-            Buy Now
+            <Zap size={15} />
+            <span>Buy Now</span>
           </button>
         </div>
 
         {/* Details */}
-
         <Link
           href={`/shop/${item.id}`}
           className="details-link"
         >
-          <button className="details-btn">
-            <Eye size={18} />
+          <button type="button" className="details-btn">
+            <Eye size={16} />
             <span>View Details</span>
           </button>
         </Link>

@@ -43,7 +43,7 @@ export default function Appointment() {
               {/* Call Now */}
               <a
                 href="tel:+917037305542"
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#0B5D3B] transition hover:scale-105"
+                className="inline-flex items-center justify-center rounded-full bg-[#C9A227] px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white transition hover:scale-105"
               >
                 Call Now
               </a>

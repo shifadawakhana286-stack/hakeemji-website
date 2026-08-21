@@ -431,9 +431,11 @@ VIDEO
 
     width:100%;
 
-    height:560px;
+    height:auto;
 
-    object-fit:cover;
+    aspect-ratio:16 / 9;
+
+    object-fit:contain;
 
     display:block;
 
@@ -445,7 +447,7 @@ VIDEO
 
 .about-video-frame:hover .about-video{
 
-    transform:scale(1.05);
+    transform:none;
 
 }
 
@@ -894,7 +896,7 @@ justify-content:flex-start;
 
 .about-video{
 
-height:420px;
+height:auto;
 
 }
 
@@ -987,7 +989,7 @@ font-size:15px;
 
 .about-video{
 
-height:350px;
+height:auto;
 
 }
 

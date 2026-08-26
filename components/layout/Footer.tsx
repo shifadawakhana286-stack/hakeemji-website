@@ -170,7 +170,7 @@ export default function Footer() {
             <div className="flex flex-wrap gap-3">
 
               <a
-                href="https://www.facebook.com/people/Shifa-Dawakhana/61557998630626/"
+                href="https://www.facebook.com/people/Shifa-Dawakhana/61557998630626/a"
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
                 aria-label="Facebook"
               >

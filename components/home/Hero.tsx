@@ -210,6 +210,7 @@ export default function Hero() {
                   width={520}
                   height={650}
                   sizes="520px"
+                  loading="eager"
                   className={`hero-image hero-slide ${
                     activeImage === 1 ? "active" : ""
                   }`}
@@ -224,6 +225,7 @@ export default function Hero() {
                   width={520}
                   height={650}
                   sizes="520px"
+                  loading="eager"
                   className={`hero-image hero-slide ${
                     activeImage === 2 ? "active" : ""
                   }`}
@@ -238,6 +240,7 @@ export default function Hero() {
                   width={520}
                   height={650}
                   sizes="520px"
+                  loading="eager"
                   className={`hero-image hero-slide ${
                     activeImage === 3 ? "active" : ""
                   }`}

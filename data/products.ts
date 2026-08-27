@@ -34,7 +34,7 @@ export const products: Product[] = [
 
   images: [
     "/products/cyst.webp",
-    "/products/cyst-2.webp",
+    "/products/cyst2.webp",
   ],
 
   ingredients: [
@@ -108,8 +108,8 @@ export const products: Product[] = [
     "Kankayan Vati Piles is a traditional Ayurvedic herbal formulation indicated for piles, fissures, hemorrhoids, pain, itching, and bleeding-related rectal discomfort.",
 
   images: [
-    "/products/kankayan-vati-piles.webp",
-    "/products/kankayan-vati-piles2.webp",
+    "/products/25.webp",
+    "/products/56.webp",
   ],
 
   ingredients: [
@@ -169,8 +169,8 @@ export const products: Product[] = [
     "Kamdev Tablet DHAT is an Ayurvedic herbal formulation containing Koch Ki Giri, Safed Musli, Makhana Ki Tuddi, Tal Makhana, and Mishri, traditionally used to support male vitality and reproductive wellness.",
 
   images: [
-    "/products/kamdev-tablet-dhat.webp",
-    "/products/kamdev-tablet-dhat2.webp",
+    "/products/61.webp",
+    "/products/34.webp",
   ],
 
   ingredients: [
@@ -654,7 +654,7 @@ export const products: Product[] = [
 },
 
 {
-  id: 8,
+  id: 34,
   name: "Pradar Nashak Powder",
   price: 399,
 
@@ -700,7 +700,7 @@ export const products: Product[] = [
 },
 
 {
-  id: 15,
+  id: 35,
   name: "Kalyan Sundar Ras Cyst",
   price: 350,
 
@@ -1712,7 +1712,6 @@ export const products: Product[] = [
 
   images: [
     "/products/9.webp",
-    "/products/19.webp",
   ],
 
   ingredients: [],
@@ -1739,7 +1738,7 @@ export const products: Product[] = [
 },
 
 {
-  id: 33,
+  id: 37,
 
   name: "Sperm Lukmani Majoon",
 

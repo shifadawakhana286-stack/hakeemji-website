@@ -224,7 +224,7 @@ export default function PersonalizedPage() {
                 </Link>
 
                 <Link
-                  href="/video-consultation"
+                  href="/features/online-consult"
                   className="
                     inline-flex
                     items-center

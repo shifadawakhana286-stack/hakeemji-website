@@ -70,6 +70,7 @@ export default function ProductDetails({ product }: Props) {
                 alt={product.name}
                 fill
                 priority
+                sizes="(max-width: 1100px) 92vw, 50vw"
                 className="product-image"
               />
             </div>
@@ -87,6 +88,7 @@ export default function ProductDetails({ product }: Props) {
                     src={img}
                     alt={product.name}
                     fill
+                    sizes="(max-width: 500px) 60px, (max-width: 768px) 68px, 88px"
                     className="thumb-image"
                   />
                 </div>
@@ -311,6 +313,8 @@ export default function ProductDetails({ product }: Props) {
                     src={item.images[0]}
                     alt={item.name}
                     fill
+                    loading="eager"
+                    sizes="(max-width: 500px) 92vw, (max-width: 768px) 45vw, 220px"
                     className="related-img"
                   />
                 </div>

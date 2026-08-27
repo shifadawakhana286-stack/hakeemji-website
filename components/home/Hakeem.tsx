@@ -58,6 +58,7 @@ export default function Hakeem() {
                 alt="Hakeem Hafiz Shadab"
                 fill
                 priority
+                sizes="(max-width: 768px) 170px, (max-width: 1024px) 210px, 240px"
                 className="doctor-photo"
               />
             </div>

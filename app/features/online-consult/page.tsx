@@ -29,7 +29,7 @@ export default function VideoConsultation() {
   const [error, setError] = useState("");
 
   // Your clinic WhatsApp number
-  const whatsappNumber = "91 70373 05542";
+  const whatsappNumber = "917037305542";
 
   const getTodayDate = () => {
     const today = new Date();

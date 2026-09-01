@@ -18,23 +18,23 @@ const quickLinks = [
   },
   {
     title: "About",
-    href: "#about",
+    href: "/#about",
   },
   {
     title: "Remedies",
-    href: "#remedies",
+    href: "/#remedies",
   },
   {
     title: "Shop",
-    href: "#shop",
+    href: "/shop",
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/#services",
   },
   {
     title: "Contact",
-    href: "#appointment",
+    href: "/contact",
   },
 ];
 

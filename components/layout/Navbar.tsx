@@ -29,7 +29,7 @@ export default function Navbar() {
     { title: "Courses", href: "/courses" },
     { title: "Shop", href: "/shop" },
     { title: "Services", href: "/#services" },
-    { title: "Contact", href: "/#contact" },
+    { title: "Contact", href: "/contact" },
   ];
 
   return (

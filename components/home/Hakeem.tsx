@@ -90,7 +90,7 @@ export default function Hakeem() {
 
               <div>
                 <Clock3 size={18} />
-                <span>Mon – Sat | 10 AM – 6 PM</span>
+                <span>Mon – Sat | 10 AM – 11 PM</span>
               </div>
 
             </div>

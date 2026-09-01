@@ -46,7 +46,7 @@ const features = [
   {
     icon: Users,
     title: "Trusted",
-    description: "Thousands of satisfied patients have trusted Al Shifa.",
+    description: "Thousands of satisfied patients have trusted Shifa Dawakhana.",
     href: "/features/trusted",
   },
 ];
@@ -61,7 +61,7 @@ export default function Features() {
         <div className="features-heading">
 
           <span className="features-subtitle">
-            Why Choose Al Shifa
+            Why Choose Shifa Dawakhana
           </span>
 
           <h2>

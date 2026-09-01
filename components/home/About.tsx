@@ -76,7 +76,7 @@ export default function About() {
 
               <p>
 
-                About Al Shifa
+                About Shifa Dawakhana
 
               </p>
 
@@ -96,7 +96,7 @@ export default function About() {
 
             <p className="about-description">
 
-              Al Shifa Dawakhana has been serving families with
+              Shifa Dawakhana has been serving families with
               authentic Unani healthcare for more than four decades.
               We combine traditional herbal wisdom with modern
               consultation to provide safe, natural and personalized

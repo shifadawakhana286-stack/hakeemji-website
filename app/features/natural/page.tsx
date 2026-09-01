@@ -63,7 +63,7 @@ export default function NaturalPage() {
 
             <p>
 
-              Every formulation at Al Shifa Dawakhana is prepared
+              Every formulation at Shifa Dawakhana is prepared
               using carefully selected herbs and authentic Unani
               principles, delivering safe and natural healing.
 

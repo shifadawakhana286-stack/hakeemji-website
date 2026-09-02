@@ -193,6 +193,16 @@ text-align:center;
 
 }
 
+.product-category {
+  margin: -4px 0 0;
+  color: #567067;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
 /* =======================================================
    BUTTONS
 ======================================================= */

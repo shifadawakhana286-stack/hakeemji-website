@@ -51,7 +51,7 @@ I would like to place an order.
 ${cart
   .map(
     (item) =>
-      `• ${item.name}\nQty : ${item.quantity}\nPrice : ₹${item.price}`
+      `• ${item.name}\nQty : ${item.quantity}\nPrice : ₹${item.salePrice}`
   )
   .join("\n\n")}
 
@@ -138,9 +138,9 @@ Thank You.`
                         </p>
 
                         <div className="price-row">
-                          <span className="price">₹{item.price}</span>
-                          {item.oldPrice && (
-                            <span className="old-price">₹{item.oldPrice}</span>
+                          <span className="price">₹{item.salePrice}</span>
+                          {item.mrp && (
+                            <span className="old-price">MRP ₹{item.mrp}</span>
                           )}
                         </div>
                       </div>
@@ -173,7 +173,7 @@ Thank You.`
                         {/* Total */}
                         <div className="total-box">
                           <span>Subtotal</span>
-                          <h3>₹{item.price * item.quantity}</h3>
+                          <h3>₹{item.salePrice * item.quantity}</h3>
                         </div>
 
                         {/* Remove */}

@@ -101,9 +101,7 @@ export default function ProductDetails({ product }: Props) {
 
           <div className="info-column">
 
-            <span className="badge">
-              Premium Herbal Medicine
-            </span>
+            <span className="badge">{product.category ?? "Premium Herbal Medicine"}</span>
 
             <h1>{product.name}</h1>
 
@@ -118,11 +116,8 @@ export default function ProductDetails({ product }: Props) {
             </div>
 
             <div className="price-box">
-              <h2>₹{product.price}</h2>
-
-              {product.oldPrice && (
-                <del>₹{product.oldPrice}</del>
-              )}
+              <del>MRP ₹{product.mrp}</del>
+              <h2>₹{product.salePrice}</h2>
             </div>
 
             <p className="short-desc">
@@ -322,7 +317,7 @@ export default function ProductDetails({ product }: Props) {
                 <h4>{item.name}</h4>
 
                 <span className="related-price">
-                  ₹{item.price}
+                  <del>₹{item.mrp}</del> ₹{item.salePrice}
                 </span>
               </Link>
             ))}

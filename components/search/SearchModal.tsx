@@ -93,6 +93,7 @@ export default function SearchModal({
     const matchedProducts = products.filter((product) => {
       const searchableText = [
         product.name,
+        product.category,
         product.description,
         product.shortDescription,
         product.seoDescription,

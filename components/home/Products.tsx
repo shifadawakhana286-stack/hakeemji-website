@@ -124,11 +124,13 @@ export default function ProductCard({ item }: Props) {
           {item.name}
         </h3>
 
+        {item.category && (
+          <p className="product-category">{item.category}</p>
+        )}
+
         <div className="product-price-row">
-          <span className="product-price">₹{item.price}</span>
-          {item.oldPrice && (
-            <span className="product-old-price">₹{item.oldPrice}</span>
-          )}
+          <span className="product-old-price">MRP ₹{item.mrp}</span>
+          <span className="product-price">₹{item.salePrice}</span>
         </div>
 
         {/* Buttons */}

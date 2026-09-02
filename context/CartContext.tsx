@@ -16,8 +16,8 @@ import { TreatmentPackage } from "@/data/treatments";
 export interface CartItem {
   id: number | string;
   name: string;
-  price: number;
-  oldPrice?: number;
+  salePrice: number;
+  mrp?: number;
   images: string[];
   quantity: number;
   category?: string;
@@ -78,13 +78,19 @@ function normalizeCartItem(input: AddToCartInput): Omit<CartItem, "quantity"> {
   // Use a string ID prefix for courses if they have a slug to avoid collisions with product numeric IDs
   const id = isTreatment && "slug" in input ? `course-${input.id}` : input.id;
 
+  const isProduct = "salePrice" in input;
+
   return {
     id,
     name,
-    price: input.price,
-    oldPrice: input.oldPrice,
+    salePrice: isProduct ? input.salePrice : input.price,
+    mrp: isProduct ? input.mrp : input.oldPrice,
     images,
-    category: isTreatment ? "Treatment Package" : "Herbal Medicine",
+    category: isTreatment
+      ? "Treatment Package"
+      : isProduct
+        ? input.category ?? "Herbal Medicine"
+        : "Herbal Medicine",
     slug: "slug" in input ? input.slug : undefined,
   };
 }
@@ -206,7 +212,7 @@ export function CartProvider({
 
   const totalPrice = useMemo(() => {
     return cart.reduce(
-      (total, item) => total + item.quantity * item.price,
+      (total, item) => total + item.quantity * item.salePrice,
       0
     );
   }, [cart]);

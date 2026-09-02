@@ -1,11 +1,12 @@
 export interface Product {
   id: number;
   name: string;
+  category?: ProductCategory;
   description: string;
   shortDescription: string;
   seoDescription: string;
-  price: number;
-  oldPrice?: number;
+  mrp: number;
+  salePrice: number;
   images: string[];
   ingredients: string[];
   uses?: string[];
@@ -15,13 +16,22 @@ export interface Product {
   storage: string[];
 }
 
+export type ProductCategory =
+  | "Majoon"
+  | "Powder"
+  | "Drops"
+  | "Tablet"
+  | "Syrup";
+
 export const products: Product[] = [
 
 
 {
   id: 1,
   name: "Chandanvalalakshayadi Oil for CYST",
-  price: 999,
+  category: "Drops",
+  mrp: 999,
+  salePrice: 700,
 
   description:
     "Chandanvalalakshayadi Oil is a traditional herbal oil formulation prepared with a combination of Ayurvedic herbs and ingredients. The formulation is presented for use in conditions listed on the product label.",
@@ -33,8 +43,8 @@ export const products: Product[] = [
     "Chandanvalalakshayadi Oil for CYST is a traditional herbal formulation containing Ayurvedic herbs and oils, prepared according to a classical R.T.S. Part 1 based formula.",
 
   images: [
-    "/products/cyst.webp",
-    "/products/cyst2.webp",
+    "/products/chandanvalalakshayadi-oil-for-cyst.webp",
+    "/products/chandanvalalakshayadi-oil-for-cyst-2.webp",
   ],
 
   ingredients: [
@@ -96,7 +106,9 @@ export const products: Product[] = [
 {
   id: 4,
   name: "Kankayan Vati Piles",
-  price: 250,
+  category: "Tablet",
+  mrp: 250,
+  salePrice: 200,
 
   description:
     "Kankayan Vati is a traditional Ayurvedic formulation prepared with a combination of herbal ingredients. It is traditionally indicated for piles, fissures, hemorrhoids, pain, itching, and bleeding-related rectal discomfort.",
@@ -108,8 +120,8 @@ export const products: Product[] = [
     "Kankayan Vati Piles is a traditional Ayurvedic herbal formulation indicated for piles, fissures, hemorrhoids, pain, itching, and bleeding-related rectal discomfort.",
 
   images: [
-    "/products/25.webp",
-    "/products/56.webp",
+    "/products/kankayan-vati-piles-3.webp",
+    "/products/kankayan-vati-piles-4.webp",
   ],
 
   ingredients: [
@@ -157,7 +169,9 @@ export const products: Product[] = [
 {
   id: 12,
   name: "Kamdev Tablet DHAT",
-  price: 199,
+  category: "Tablet",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Kamdev Tablet is a traditional Ayurvedic herbal formulation made with herbal ingredients and formulated according to Ayurvedic principles. The label describes it as a formulation traditionally used to support male vitality, reproductive health, and overall wellness.",
@@ -169,8 +183,8 @@ export const products: Product[] = [
     "Kamdev Tablet DHAT is an Ayurvedic herbal formulation containing Koch Ki Giri, Safed Musli, Makhana Ki Tuddi, Tal Makhana, and Mishri, traditionally used to support male vitality and reproductive wellness.",
 
   images: [
-    "/products/61.webp",
-    "/products/34.webp",
+    "/products/kamdev-tablet-dhat-3.webp",
+    "/products/kamdev-tablet-dhat-4.webp",
   ],
 
   ingredients: [
@@ -210,15 +224,16 @@ export const products: Product[] = [
 
   {
     id: 5,
-    name: "Madan Manjari",
-    price: 1300,
-    oldPrice: 3000,
+  name: "Madan Manjari",
+    category: "Tablet",
+    mrp: 275,
+    salePrice: 200,
     description: "",
     shortDescription: "",
     seoDescription: "",
     images: [
-      "/products/47.webp",
-      "/products/55.webp",
+      "/products/madan-manjari.webp",
+      "/products/madan-manjari-2.webp",
     ],
     ingredients: [],
     uses: [],
@@ -232,9 +247,10 @@ export const products: Product[] = [
 
   {
     id: 6,
-    name: "Kamla Her Ras Face Clean",
-    price: 250,
-    oldPrice: 300,
+  name: "Kamla Her Ras Face Clean",
+    category: "Tablet",
+    mrp: 250,
+    salePrice: 200,
 
     description:
       "Kamla Her Ras Face Clean is a premium Unani herbal formulation specially designed to promote naturally healthy, clear, and glowing skin. Prepared using carefully selected traditional herbs, it helps reduce acne and pimples, minimizes black spots and dark circles, supports healthy skin texture, and enhances the skin's natural radiance.",
@@ -246,8 +262,8 @@ export const products: Product[] = [
       "Kamla Her Ras Face Clean is a traditional Unani herbal formulation that helps promote glowing skin, reduce acne, black spots, and dark circles while supporting naturally healthy skin.",
 
     images: [
-      "/products/67.webp",
-      "/products/4.webp",
+      "/products/kamla-her-ras-face-clean.webp",
+      "/products/kamla-her-ras-face-clean-2.webp",
     ],
 
     ingredients: [
@@ -296,8 +312,9 @@ export const products: Product[] = [
 {
   id: 11,
   name: "Maharas Nadi Syrup",
-  price: 2500,
-  oldPrice: 3000,
+  category: "Syrup",
+  mrp: 250,
+  salePrice: 200,
 
   description:
     "Maharas Nadi Syrup is an Ayurvedic classical medicine formulated with a traditional combination of herbal ingredients. It is presented for supporting vitality, stamina, strength and overall wellness.",
@@ -309,8 +326,8 @@ export const products: Product[] = [
     "Maharas Nadi Syrup is an Ayurvedic classical herbal formulation made with traditional ingredients to support strength, stamina, vitality and overall wellness.",
 
   images: [
-    "/products/22.webp",
-    "/products/13.webp",
+    "/products/maharas-nadi-syrup.webp",
+    "/products/maharas-nadi-syrup-2.webp",
   ],
 
   ingredients: [
@@ -367,9 +384,10 @@ export const products: Product[] = [
 
   {
     id: 7,
-    name: "Tagaradi Kwath - Piles Care",
-    price: 199,
-    oldPrice: 250,
+  name: "Tagaradi Kwath - Piles Care",
+    category: "Syrup",
+    mrp: 199,
+    salePrice: 150,
 
     description:
       "Tagaradi Kwath is a traditional Ayurvedic herbal formulation specially prepared to support the management of piles (hemorrhoids) and fissures. It helps relieve constipation, supports comfortable bowel movements, reduces discomfort associated with bleeding and non-bleeding piles, and promotes anorectal health.",
@@ -381,8 +399,8 @@ export const products: Product[] = [
       "Tagaradi Kwath Piles Care is a traditional Ayurvedic herbal medicine formulated to support relief from piles, fissures, constipation, and associated discomfort while promoting healthy bowel function.",
 
     images: [
-      "/products/101.webp",
-      "/products/102.webp",
+      "/products/tagaradi-kwath-piles-care.webp",
+      "/products/tagaradi-kwath-piles-care-2.webp",
     ],
 
     ingredients: [
@@ -432,9 +450,10 @@ export const products: Product[] = [
 
   {
     id: 8,
-    name: "Ameer Ras Uric Acid",
-    price: 250,
-    oldPrice: 300,
+  name: "Ameer Ras Uric Acid",
+    category: "Tablet",
+    mrp: 250,
+    salePrice: 200,
 
     description:
       "Ameer Ras Uric Acid is a premium Ayurvedic herbal formulation specially developed to help maintain healthy uric acid levels and support joint health. It assists in relieving gouty arthritis, joint pain, swelling, stiffness, and inflammatory discomfort while promoting mobility.",
@@ -446,8 +465,8 @@ export const products: Product[] = [
       "Ameer Ras Uric Acid is an Ayurvedic herbal tablet formulated to support healthy uric acid levels, relieve gouty arthritis, joint pain, swelling, and improve overall joint health naturally.",
 
     images: [
-      "/products/103.webp",
-      "/products/104.webp",
+      "/products/ameer-ras-uric-acid.webp",
+      "/products/ameer-ras-uric-acid-2.webp",
     ],
 
     ingredients: [
@@ -481,9 +500,10 @@ export const products: Product[] = [
 
   {
     id: 9,
-    name: "Jalodarari Ras Detox & Constipation",
-    price: 250,
-    oldPrice: 300,
+  name: "Jalodarari Ras Detox & Constipation",
+    category: "Tablet",
+    mrp: 100,
+    salePrice: 70,
 
     description:
       "Jalodarari Ras Detox & Constipation is a classical Ayurvedic herbal formulation specially designed to support digestive health, natural detoxification, and regular bowel movements. It helps relieve constipation, improves digestion, reduces bloating and gas, promotes intestinal cleansing, and supports healthy gut function.",
@@ -495,8 +515,8 @@ export const products: Product[] = [
       "Jalodarari Ras Detox & Constipation is an Ayurvedic herbal formulation that helps support natural detoxification, relieve constipation, improve digestion, reduce bloating, and promote healthy bowel movements for overall digestive wellness.",
 
     images: [
-      "/products/105.webp",
-      "/products/106.webp",
+      "/products/jalodarari-ras-detox-constipation.webp",
+      "/products/jalodarari-ras-detox-constipation-2.webp",
     ],
 
     ingredients: [
@@ -546,7 +566,9 @@ export const products: Product[] = [
   {
   id: 14,
   name: "APURV TILA TAIL with Kesar & Kastoori",
-  price: 399,
+  category: "Drops",
+  mrp: 399,
+  salePrice: 300,
 
   description:
     "APURV TILA TAIL is a traditional massage oil formulated with herbal ingredients including Kesar and Kastoori. The product label describes it as a massage oil for men and recommends massage for a few minutes before use.",
@@ -558,8 +580,8 @@ export const products: Product[] = [
     "APURV TILA TAIL with Kesar & Kastoori is a traditional herbal massage oil containing Safed Somal, Desi Ghee, Kesar, Kastoori, Jaiphal, Jaivitri, Long, Beerbahuti and Aak Doodh.",
 
   images: [
-    "/products/107.webp",
-    "/products/108.webp",
+    "/products/apurv-tila-tail-with-kesar-kastoori.webp",
+    "/products/apurv-tila-tail-with-kesar-kastoori-2.webp",
   ],
 
   ingredients: [
@@ -595,7 +617,9 @@ export const products: Product[] = [
 {
   id:15,
   name: "Amar Sundari Vati - Hormones",
-  price: 750,
+  category: "Tablet",
+  mrp: 750,
+  salePrice: 650,
 
   description:
     "Amar Sundari Vati is an Ayurvedic classical medicine formulated with a combination of traditional herbal ingredients. The product label presents it as a formulation for hormone production, natural hormone support, and maintaining healthy hormonal balance.",
@@ -607,8 +631,8 @@ export const products: Product[] = [
     "Amar Sundari Vati is an Ayurvedic classical herbal formulation containing traditional herbs and ingredients, presented for natural hormone support and healthy hormonal balance.",
 
   images: [
-    "/products/109.webp",
-    "/products/110.webp",
+    "/products/amar-sundari-vati-hormones.webp",
+    "/products/amar-sundari-vati-hormones-2.webp",
   ],
 
   ingredients: [
@@ -656,7 +680,9 @@ export const products: Product[] = [
 {
   id: 34,
   name: "Pradar Nashak Powder",
-  price: 399,
+  category: "Powder",
+  mrp: 399,
+  salePrice: 250,
 
   description:
     "Pradar Nashak Powder is an Ayurvedic classical herbal formulation prepared from traditional herbal ingredients. The product label presents it for women's wellness and mentions support for menstrual problems, back pain, joint pain, and sexual weakness.",
@@ -668,8 +694,8 @@ export const products: Product[] = [
     "Pradar Nashak Powder is an Ayurvedic classical herbal formulation containing traditional herbal ingredients and is presented for women's wellness, menstrual problems, back pain, joint pain, and sexual weakness.",
 
   images: [
-    "/products/111.webp",
-    "/products/112.webp",
+    "/products/pradar-nashak-powder.webp",
+    "/products/pradar-nashak-powder-2.webp",
   ],
 
   ingredients: [
@@ -702,7 +728,9 @@ export const products: Product[] = [
 {
   id: 35,
   name: "Kalyan Sundar Ras Cyst",
-  price: 350,
+  category: "Tablet",
+  mrp: 350,
+  salePrice: 250,
 
   description:
     "Kalyan Sundar Ras is an Ayurvedic classical formulation prepared with traditional ingredients. The product label presents it for use in cyst-related and other conditions listed on the product packaging.",
@@ -714,8 +742,8 @@ export const products: Product[] = [
     "Kalyan Sundar Ras Cyst is an Ayurvedic classical formulation containing Ras Sindor, Abrak Bhasm, Chandi Bhasm, Sona Bhasm, Tamr Bham, Sudh Singraf, Chitak, and Hasti Sundhi.",
 
   images: [
-    "/products/113.webp",
-    "/products/114.webp",
+    "/products/kalyan-sundar-ras-cyst.webp",
+    "/products/kalyan-sundar-ras-cyst-2.webp",
   ],
 
   ingredients: [
@@ -762,7 +790,9 @@ export const products: Product[] = [
 {
   id: 16,
   name: "Lodhrasav for CYST",
-  price: 275,
+  category: "Syrup",
+  mrp: 275,
+  salePrice: 200,
 
   description:
     "Lodhrasav is an Ayurvedic classical herbal formulation prepared with a combination of traditional herbs. The product label presents it as a formulation useful for fibrous cyst, parapelvic cyst, and Gartner's duct cyst.",
@@ -774,8 +804,8 @@ export const products: Product[] = [
     "Lodhrasav for CYST is an Ayurvedic classical herbal formulation containing traditional herbs and is presented for fibrous cyst, parapelvic cyst, and Gartner's duct cyst.",
 
   images: [
-    "/products/58.webp",
-    "/products/52.webp",
+    "/products/lodhrasav-for-cyst.webp",
+    "/products/lodhrasav-for-cyst-2.webp",
   ],
 
   ingredients: [
@@ -831,7 +861,8 @@ export const products: Product[] = [
 {
   id: 17,
   name: "Charmrog Nashak Malham",
-  price: 150,
+  mrp: 150,
+  salePrice: 150,
 
   description:
     "Charmrog Nashak Malham is a traditional herbal ointment formulated with a combination of herbal ingredients. The product label indicates its use for external application in various skin conditions.",
@@ -843,8 +874,8 @@ export const products: Product[] = [
     "Charmrog Nashak Malham is a traditional herbal ointment containing a combination of herbs and ingredients, formulated for external application in skin conditions listed on the product label.",
 
   images: [
-    "/products/62.webp",
-    "/products/38.webp",
+    "/products/charmrog-nashak-malham.webp",
+    "/products/charmrog-nashak-malham-2.webp",
   ],
 
   ingredients: [
@@ -907,7 +938,9 @@ export const products: Product[] = [
 {
   id: 18,
   name: "Dhatu Paushtik With Musli",
-  price: 275,
+  category: "Powder",
+  mrp: 275,
+  salePrice: 250,
 
   description:
     "Dhatu Paushtik is an Ayurvedic classical herbal powder formulated with traditional herbal ingredients. The product label describes it as a herbal medicine intended for middle-aged adults and traditionally used to support vitality, reproductive wellness, and overall strength.",
@@ -919,8 +952,8 @@ export const products: Product[] = [
     "Dhatu Paushtik With Musli is an Ayurvedic classical herbal powder containing Safed Musli and other traditional ingredients, presented for vitality, reproductive wellness, strength, and overall wellbeing.",
 
   images: [
-    "/products/26.webp",
-    "/products/51.webp",
+    "/products/dhatu-paushtik-with-musli.webp",
+    "/products/dhatu-paushtik-with-musli-2.webp",
   ],
 
   ingredients: [
@@ -969,7 +1002,9 @@ export const products: Product[] = [
 {
   id: 19,
   name: "Sannipatik Kwath Pain Remedy",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Sannipatik Kwath is an Ayurvedic herbal formulation prepared with a traditional combination of herbs. The product label describes it as useful for different types of pain and conditions associated with aggravated Vata, including joint and knee discomfort.",
@@ -981,8 +1016,8 @@ export const products: Product[] = [
     "Sannipatik Kwath Pain Remedy is an Ayurvedic herbal formulation containing traditional herbs such as Baividang, Pippalmool, Dev Daru, Brahmi, Saunth, Kali Mirch, Pippal, Chitrakmool, Kayaphal, and Kamal Kand.",
 
   images: [
-    "/products/pain1.webp",
-    "/products/pain2.webp",
+    "/products/sannipatik-kwath-pain-remedy.webp",
+    "/products/sannipatik-kwath-pain-remedy-2.webp",
   ],
 
   ingredients: [
@@ -1026,7 +1061,9 @@ export const products: Product[] = [
 {
   id: 20,
   name: "Mass Vati Kwath",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Mass Vati Kwath is an Ayurvedic herbal formulation prepared with traditional herbal ingredients. The product label presents it as a wellness formulation supporting stamina, skin healing, digestion, bone growth, liver health, hair health, muscle building, antioxidant support, wound healing, and immunity.",
@@ -1038,8 +1075,8 @@ export const products: Product[] = [
     "Mass Vati Kwath is an Ayurvedic herbal formulation containing Ashwagandha, Jatamansi, Khurasani Ajwain Beej, and water, presented for stamina, digestion, muscle support, skin health, and overall wellness.",
 
   images: [
-    "/products/17.webp",
-    "/products/30.webp",
+    "/products/mass-vati-kwath.webp",
+    "/products/mass-vati-kwath-2.webp",
   ],
 
   ingredients: [
@@ -1079,7 +1116,9 @@ export const products: Product[] = [
 {
   id: 21,
   name: "Argyavdhadi Kwath Gas Kabz",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Argyavdhadi Kwath is an Ayurvedic classical herbal formulation prepared with traditional ingredients. The product label presents it for digestive wellness and support in conditions related to gas, constipation, and acidity.",
@@ -1091,8 +1130,8 @@ export const products: Product[] = [
     "Argyavdhadi Kwath Gas Kabz is an Ayurvedic classical herbal formulation containing Amaltaas, Kutki, Nishoth, Munakka, Sanay, Badi Harad, Gulab, Gulkand, and water.",
 
   images: [
-    "/products/1.webp",
-    "/products/68.webp",
+    "/products/argyavdhadi-kwath-gas-kabz.webp",
+    "/products/argyavdhadi-kwath-gas-kabz-2.webp",
   ],
 
   ingredients: [
@@ -1129,7 +1168,9 @@ export const products: Product[] = [
 {
   id: 22,
   name: "Sundari Kalp",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Sundari Kalp is an Ayurvedic classical herbal formulation prepared with a combination of traditional ingredients. The product label presents it as a formulation for women's wellness and mentions support for menstrual health, body weakness, and related discomforts.",
@@ -1141,8 +1182,8 @@ export const products: Product[] = [
     "Sundari Kalp is an Ayurvedic classical herbal formulation containing Ashok Chhal, Lodh, Shugar, Gudh, Dhadhi Ke Phool, Munakkha, and other traditional herbs and ingredients.",
 
   images: [
-    "/products/46.webp",
-    "/products/5.webp",
+    "/products/sundari-kalp.webp",
+    "/products/sundari-kalp-2.webp",
   ],
 
   ingredients: [
@@ -1202,7 +1243,9 @@ export const products: Product[] = [
 {
   id: 23,
   name: "Giloy Sharbat",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Giloy Sharbat is an Ayurvedic classical herbal preparation made using Giloy (Tinospora cordifolia). The product label describes it as a traditional herbal formulation for general wellness and mentions its use in supporting the body's natural strength and immunity.",
@@ -1214,8 +1257,8 @@ export const products: Product[] = [
     "Giloy Sharbat is an Ayurvedic classical herbal preparation made with Giloy and traditionally used for general wellness and natural immunity support.",
 
   images: [
-    "/products/50.webp",
-    "/products/66.webp",
+    "/products/giloy-sharbat.webp",
+    "/products/giloy-sharbat-2.webp",
   ],
 
   ingredients: [
@@ -1242,7 +1285,9 @@ export const products: Product[] = [
 {
   id: 24,
   name: "Rakt Shodhak Sharbat",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Rakt Shodhak Sharbat is an Ayurvedic herbal formulation containing traditional ingredients. The product label presents it as a blood-purifying herbal preparation and mentions use for boils, skin infections, allergic conditions, itching, burning, and pimples.",
@@ -1254,8 +1299,8 @@ export const products: Product[] = [
     "Rakt Shodhak Sharbat is an Ayurvedic herbal formulation containing Ushwa, Manjeeth, Souf, Unnaav, Safista, Hansraj, Gauvjawa, and Shehad.",
 
   images: [
-    "/products/35.webp",
-    "/products/59.webp",
+    "/products/rakt-shodhak-sharbat.webp",
+    "/products/rakt-shodhak-sharbat-2.webp",
   ],
 
   ingredients: [
@@ -1292,7 +1337,9 @@ export const products: Product[] = [
 {
   id: 25,
   name: "Udaramrit Yog",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Udaramrit Yog is an Ayurvedic herbal formulation presented on the product label for digestive discomfort and related stomach problems. The label highlights gas, acidity, stomach pain, vomiting, and heartburn.",
@@ -1304,8 +1351,8 @@ export const products: Product[] = [
     "Udaramrit Yog is an Ayurvedic herbal formulation containing traditional herbal extracts and is presented for digestive wellness, including gas, acidity, stomach discomfort, vomiting, and heartburn.",
 
   images: [
-    "/products/45.webp",
-    "/products/27.webp",
+    "/products/udaramrit-yog.webp",
+    "/products/udaramrit-yog-2.webp",
   ],
 
   ingredients: [
@@ -1351,7 +1398,9 @@ export const products: Product[] = [
 {
   id: 26,
   name: "Ark Harasra",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Ark Harasra is an Ayurvedic herbal tonic for liver health, formulated with a combination of traditional herbal ingredients. The product label presents it as a herbal tonic for supporting liver wellness.",
@@ -1363,8 +1412,8 @@ export const products: Product[] = [
     "Ark Harasra is an Ayurvedic herbal tonic for liver health containing traditional herbal ingredients including Giloye, Tulsi, Neem, Mulethi, Bahera, and other herbs.",
 
   images: [
-    "/products/43.webp",
-    "/products/63.webp",
+    "/products/ark-harasra.webp",
+    "/products/ark-harasra-2.webp",
   ],
 
   ingredients: [
@@ -1411,7 +1460,9 @@ export const products: Product[] = [
 {
   id: 27,
   name: "Shilajeetyadi Vati",
-  price: 750,
+  category: "Tablet",
+  mrp: 750,
+  salePrice: 650,
 
   description:
     "Shilajeetyadi Vati is an Ayurvedic classical formulation containing traditional ingredients. The product label presents it as an Ayurvedic supplement for men and mentions strength, stamina, power, and support for male vitality.",
@@ -1423,8 +1474,8 @@ export const products: Product[] = [
     "Shilajeetyadi Vati is an Ayurvedic formulation containing Shudh Shilajeet, Abrak Bhasm, Swarn Bhasm, Loh Bhasm, Sudh Guggul, Sudh Tankar, and Bhangra Ras.",
 
   images: [
-    "/products/37.webp",
-    "/products/48.webp",
+    "/products/shilajeetyadi-vati.webp",
+    "/products/shilajeetyadi-vati-2.webp",
   ],
 
   ingredients: [
@@ -1459,7 +1510,9 @@ export const products: Product[] = [
 {
   id: 28,
   name: "Kamini Vidravan Ras with Kesar",
-  price: 999,
+  category: "Tablet",
+  mrp: 999,
+  salePrice: 850,
 
   description:
     "Kamini Vidravan Ras with Kesar is an Ayurvedic classical formulation containing traditional ingredients. The product label presents it as a formulation for male vitality, stamina, and sexual wellness.",
@@ -1471,8 +1524,8 @@ export const products: Product[] = [
     "Kamini Vidravan Ras with Kesar is an Ayurvedic classical formulation containing Akarkara, Sonth, Long, Kesar, Pipal, Jaifal, Daviki, Chandan, Rineg Ral, Gandhak, and Afeem.",
 
   images: [
-    "/products/64.webp",
-    "/products/2.webp",
+    "/products/kamini-vidravan-ras-with-kesar.webp",
+    "/products/kamini-vidravan-ras-with-kesar-2.webp",
   ],
 
   ingredients: [
@@ -1510,7 +1563,9 @@ export const products: Product[] = [
 {
   id: 29,
   name: "Advanced Multinova",
-  price: 350,
+  category: "Tablet",
+  mrp: 350,
+  salePrice: 250,
 
   description:
     "Advanced Multinova is a vitamins, minerals and antioxidant formula for men and women, containing a blend of herbal extracts and nutrients.",
@@ -1522,8 +1577,8 @@ export const products: Product[] = [
     "Advanced Multinova is a dietary formula containing Mangosteen Extract, Maca Root Extract, Siberian Ginseng Extract, Blueberry Extract, Raspberry Extract, Black Currant Extract, Cherry Extract, Genoderma Lucidum Extract, Sigru, Kesar and Shilajeet.",
 
   images: [
-    "/products/16.webp",
-    "/products/8.webp",
+    "/products/advanced-multinova.webp",
+    "/products/advanced-multinova-2.webp",
   ],
 
   ingredients: [
@@ -1563,7 +1618,9 @@ export const products: Product[] = [
 {
   id: 30,
   name: "Asvagandharisht BP Control",
-  price: 199,
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
 
   description:
     "Asvagandharisht BP Control is an Ayurvedic herbal formulation presented for blood pressure level management.",
@@ -1575,8 +1632,8 @@ export const products: Product[] = [
     "Asvagandharisht BP Control is an Ayurvedic herbal formulation containing Pippatpada, Nagar Motha, Giloye, Sonth, Chirayata, Honey and other ingredients.",
 
   images: [
-    "/products/40.webp",
-    "/products/39.webp",
+    "/products/asvagandharisht-bp-control.webp",
+    "/products/asvagandharisht-bp-control-2.webp",
   ],
 
   ingredients: [
@@ -1610,7 +1667,9 @@ export const products: Product[] = [
 
   name: "Kamuni Pachan Majun",
 
-  price: 199,
+  category: "Majoon",
+  mrp: 350,
+  salePrice: 200,
 
   description:
     "Kamuni Pachan Majun is an Ayurvedic herbal formulation presented for supporting healthy digestion and overall digestive wellness.",
@@ -1622,8 +1681,8 @@ export const products: Product[] = [
     "Kamuni Pachan Majun is an Ayurvedic herbal digestive formulation presented to support digestion, appetite, and digestive wellness. It is marketed for relief from common digestive discomforts such as gas, constipation, acidity and indigestion.",
 
   images: [
-    "/products/49.webp",
-    "/products/14.webp",
+    "/products/kamuni-pachan-majun.webp",
+    "/products/kamuni-pachan-majun-2.webp",
   ],
 
   ingredients: [],
@@ -1655,7 +1714,9 @@ export const products: Product[] = [
 
   name: "Gold Bhasma Majoon",
 
-  price: 199,
+  category: "Majoon",
+  mrp: 2000,
+  salePrice: 1800,
 
   description:
     "Gold Bhasma Majoon is an Ayurvedic herbal formulation marketed by Shifa Dawakhana for supporting physical strength, energy, vitality and overall wellness.",
@@ -1667,8 +1728,8 @@ export const products: Product[] = [
     "Gold Bhasma Majoon is an Ayurvedic formulation marketed by Shifa Dawakhana and presented for physical strength, stamina, energy, vitality, mental wellness, digestion and appetite support.",
 
   images: [
-    "/products/10.webp",
-    "/products/60.webp",
+    "/products/gold-bhasma-majoon.webp",
+    "/products/gold-bhasma-majoon-2.webp",
   ],
 
   ingredients: [],
@@ -1699,7 +1760,9 @@ export const products: Product[] = [
 
   name: "Gold Lukmani Majoon",
 
-  price: 199,
+  category: "Majoon",
+  mrp: 499,
+  salePrice: 400,
 
   description:
     "Gold Lukmani Majoon is an Ayurvedic formulation marketed by Shifa Dawakhana and presented for supporting physical strength, energy, stamina and overall wellness.",
@@ -1711,7 +1774,7 @@ export const products: Product[] = [
     "Gold Lukmani Majoon is a natural Ayurvedic formulation by Shifa Dawakhana presented for physical and mental strength, energy, stamina, digestion, vitality and general wellness.",
 
   images: [
-    "/products/9.webp",
+    "/products/gold-lukmani-majoon.webp",
   ],
 
   ingredients: [],
@@ -1742,7 +1805,9 @@ export const products: Product[] = [
 
   name: "Sperm Lukmani Majoon",
 
-  price: 199,
+  category: "Majoon",
+  mrp: 2100,
+  salePrice: 1900,
 
   description:
     "Sperm Lukmani Majoon is an Ayurvedic formulation marketed by Shifa Dawakhana and presented for supporting male vitality, stamina and reproductive wellness.",
@@ -1754,8 +1819,8 @@ export const products: Product[] = [
     "Sperm Lukmani Majoon is a natural Ayurvedic formulation by Shifa Dawakhana presented for supporting male vitality, energy, stamina and reproductive wellness. It is marketed for supporting sperm quality and quantity, physical strength and overall male wellness.",
 
   images: [
-    "/products/15.webp",
-    "/products/20.webp",
+    "/products/sperm-lukmani-majoon.webp",
+    "/products/sperm-lukmani-majoon-2.webp",
   ],
 
   ingredients: [],
@@ -1786,7 +1851,9 @@ export const products: Product[] = [
 
   name: "Takra Vati",
 
-  price: 199,
+  category: "Tablet",
+  mrp: 200,
+  salePrice: 150,
 
   description:
     "Takra Vati is an Ayurvedic herbal formulation marketed by Shifa Dawakhana for supporting healthy digestion and digestive wellness.",
@@ -1798,8 +1865,8 @@ export const products: Product[] = [
     "Takra Vati is an Ayurvedic digestive formulation by Shifa Dawakhana, presented for supporting digestive health, appetite and overall digestive comfort. The product is marketed for concerns such as gas, indigestion and abdominal discomfort.",
 
   images: [
-    "/products/24.webp",
-    "/products/44.webp",
+    "/products/takra-vati.webp",
+    "/products/takra-vati-2.webp",
   ],
 
   ingredients: [],

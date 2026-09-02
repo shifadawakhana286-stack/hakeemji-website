@@ -89,7 +89,7 @@ export default function CartToast() {
               {lastAddedItem.name}
             </p>
             <p className="text-xs font-bold text-[#C9A227]">
-              ₹{lastAddedItem.price}
+              ₹{lastAddedItem.salePrice}
             </p>
           </div>
         </div>

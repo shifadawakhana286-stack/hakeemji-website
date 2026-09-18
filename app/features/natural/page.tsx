@@ -18,7 +18,7 @@ import {
 
 export default function NaturalPage() {
   return (
-    <main className="natural-page">
+    <main className="natural-page pt-16 sm:pt-[72px]">
 
       {/* ================= HERO ================= */}
 

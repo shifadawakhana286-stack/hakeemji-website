@@ -451,12 +451,14 @@ gap:10px;
     padding: 0;
   }
 
+  /* No static scale at rest — images sit flush at natural size.
+     Hover still animates to 1.05 so interaction feedback remains. */
   .product-image {
-    transform: scale(1.12);
+    transform: scale(1);
   }
 
   .product-card:hover .product-image {
-    transform: scale(1.12);
+    transform: scale(1.05);
   }
 
   .product-content{

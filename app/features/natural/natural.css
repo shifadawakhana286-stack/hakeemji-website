@@ -50,7 +50,9 @@ HERO
 
     overflow:hidden;
 
-    padding:120px 0;
+    /* main already supplies 64-72px via pt-16 sm:pt-[72px]; */
+    /* add 32px here for breathing room = ~96-104px total */
+    padding:32px 0 120px;
 
     background:linear-gradient(
         135deg,

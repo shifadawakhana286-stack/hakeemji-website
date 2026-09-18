@@ -137,7 +137,7 @@ export default function ExpertHakeemPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F8F6F1] text-[#083C2A]">
+    <main className="min-h-screen bg-[#F8F6F1] pt-16 text-[#083C2A] sm:pt-[72px]">
 
       {/* =====================================================
           HERO

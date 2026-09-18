@@ -14,17 +14,19 @@ export default function CartToast() {
 
   useEffect(() => {
     if (cartStatus === "success" && lastAddedItem) {
-      showTimerRef.current = setTimeout(() => {
-        setVisible(true);
-      }, 0);
-
+      // Clear any pending timers BEFORE setting new ones — prevents
+      // the previous bug where showTimerRef was set then immediately
+      // cancelled by the guard that followed it.
+      if (showTimerRef.current) {
+        clearTimeout(showTimerRef.current);
+      }
       if (timerRef.current) {
         clearTimeout(timerRef.current);
       }
 
-      if (showTimerRef.current) {
-        clearTimeout(showTimerRef.current);
-      }
+      showTimerRef.current = setTimeout(() => {
+        setVisible(true);
+      }, 0);
 
       timerRef.current = setTimeout(() => {
         setVisible(false);

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function ShopPage() {
   return (
-    <main>
-      <div className="mx-auto max-w-7xl px-5 pb-2 pt-24 lg:px-8">
+    <main className="pt-16 sm:pt-[72px]">
+      <div className="mx-auto max-w-7xl px-5 pb-2 pt-6 lg:px-8">
         <BackHomeLink />
       </div>
       <Shop />

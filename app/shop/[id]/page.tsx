@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { products } from "@/data/products";
 import ProductDetails from "@/app/product/ProductDetails";
 
@@ -22,4 +23,28 @@ export default async function ProductPage({
   }
 
   return <ProductDetails product={product} />;
+}
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return products.map((product) => ({ id: String(product.id) }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const product = products.find((item) => item.id === Number(id));
+
+  if (!product) return {};
+
+  return {
+    title: product.name,
+    description: product.seoDescription,
+    alternates: { canonical: `/shop/${product.id}` },
+    openGraph: {
+      title: product.name,
+      description: product.seoDescription,
+      images: [{ url: product.images[0], alt: product.name }],
+    },
+  };
 }

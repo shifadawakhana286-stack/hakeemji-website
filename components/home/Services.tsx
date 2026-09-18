@@ -2,6 +2,7 @@ import Container from "../common/Container";
 import { services } from "@/data/services";
 import { ArrowRight } from "lucide-react";
 import SectionTitle from "../common/SectionTitle";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -52,13 +53,16 @@ export default function Services() {
 
                 </p>
 
-                <button className="mt-6 flex items-center gap-2 font-semibold text-[#C9A227]">
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="mt-6 flex items-center gap-2 font-semibold text-[#C9A227]"
+                >
 
                   Learn More
 
                   <ArrowRight size={18} />
 
-                </button>
+                </Link>
 
               </div>
 

@@ -50,7 +50,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "special-shaadi-ka-course",
 
-    title: "Special Shaadi Ka Course",
+    title: "Special Shaadi Ka Course (Mardana Kamzori)",
 
     shortDescription:
       "Traditional Unani wellness course for men's vitality, stamina and overall male wellness.",
@@ -67,7 +67,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 4500,
 
-    oldPrice: 5000,
+    oldPrice: 6448,
 
     discount: 10,
 
@@ -95,8 +95,7 @@ export const treatments: TreatmentPackage[] = [
       "Sparm Majoon - 500gm",
       "Kamini Tablet - 40 Pills",
       "Shilajeet Tablet - 40 Pills",
-      "Takravarti",
-      "Pachan Shakti Goli - 80 Pills",
+      "Takravarti Goli - 80 Pills",
       "Badshah Tila Oil - 15 ML"
     ],
 
@@ -168,7 +167,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "ganth-rasuli-cyst-care-course",
 
-    title: "Ganth & Rasuli Care Course",
+    title: "Ganth & Rasuli (CYST) Care Course",
 
     shortDescription:
       "Special 30-day Unani wellness course for concerns related to ganth, cyst, rasuli and excess body fat.",
@@ -184,15 +183,17 @@ export const treatments: TreatmentPackage[] = [
       
     ],
 
-    price: 2500,
+    price: 1100,
+
+    oldPrice: 1672,
 
     discount: 0,
 
-    stock: 0,
+    stock: 100,
 
-    duration: "30 Days",
+    duration: "15 Days",
 
-    rating: 0,
+    rating: 5,
 
     badge: "Special Course",
 
@@ -290,7 +291,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "womens-health-package",
 
-    title: "Women's Health Package",
+    title: "Likoria & Women's Health Package",
 
     shortDescription:
       "Complete Unani treatment package for women's intimate health, leucorrhoea, white discharge, weakness and back pain.",
@@ -308,7 +309,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 650,
 
-    oldPrice: 850,
+    oldPrice: 996,
 
     discount: 24,
 
@@ -387,7 +388,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "mens-vitality-package",
 
-    title: "Men's Vitality Package",
+    title: "Nightfall/Dhaat Men's Problem",
 
     shortDescription:
       "Traditional Unani herbal package for stamina, vitality and male wellness.",
@@ -406,7 +407,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 500,
 
-    oldPrice: 650,
+    oldPrice: 824,
 
     discount: 23,
 
@@ -502,7 +503,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 1500,
 
-    oldPrice: 1800,
+    oldPrice: 1944,
 
     discount: 17,
 
@@ -600,7 +601,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 500,
 
-    oldPrice: 650,
+    oldPrice: 724,
 
     discount: 23,
 
@@ -687,7 +688,9 @@ export const treatments: TreatmentPackage[] = [
     "/treatments/mardana-kamzori-course/2.jpg"
   ],
 
-  price: 1300,
+  price: 1800,
+
+  oldPrice: 2372,
 
   discount: 0,
 
@@ -798,7 +801,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 450,
 
-    oldPrice: 600,
+    oldPrice: 599,
 
     discount: 25,
 
@@ -874,7 +877,7 @@ export const treatments: TreatmentPackage[] = [
 
   slug: "mardana-kamzori-special-course-1800",
 
-  title: "Mardana Kamzori Ki Har Samasya Ka Hal",
+  title: "Mardana Kamzori Lite Course",
 
   shortDescription:
     "20 din ka Special Unani Course containing selected traditional formulations for men's wellness.",
@@ -886,12 +889,13 @@ export const treatments: TreatmentPackage[] = [
 
   images: [
     "/treatments/mardana-kamzori-1800/1.jpg",
-    "/treatments/mardana-kamzori-1800/2.jpg",
   ],
 
-  price: 1800,
+  price: 1300,
 
-  discount: 0,
+  oldPrice: 1747,
+
+  discount: 25,
 
   stock: 0,
 
@@ -987,7 +991,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "weight-gain-package",
 
-    title: "Weight Gain Package",
+    title: "Weight Gain Package   (Men & Women)",
 
     shortDescription:
       "Natural Unani herbal nutrition package to support healthy weight gain, appetite and digestion.",
@@ -1006,7 +1010,7 @@ export const treatments: TreatmentPackage[] = [
 
     price: 500,
 
-    oldPrice: 650,
+    oldPrice: 796,
 
     discount: 23,
 
@@ -1101,9 +1105,9 @@ export const treatments: TreatmentPackage[] = [
       "/treatments/piles-care/4.jpg"
     ],
 
-    price: 500,
+    price: 550,
 
-    oldPrice: 650,
+    oldPrice: 783,
 
     discount: 23,
 
@@ -1190,18 +1194,18 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This comprehensive Unani treatment package is designed to support healthy digestion and liver function. It helps manage constipation, gas, acidity, stomach discomfort, fatty liver and weak digestion using traditional herbal formulations.",
 
-    image: "/treatments/digestive-care.jpg",
+    image: "/treatments/weight-gain/1.jpg",
 
     images: [
-      "/treatments/digestive-care.jpg",
-      "/treatments/digestive-care.jpg",
-      "/treatments/digestive-care.jpg",
-      "/treatments/digestive-care.jpg"
+      "/treatments/weight-gain/1.jpg",
+      "/treatments/weight-gain/2.jpg",
+      "/treatments/weight-gain/3.jpg",
+      "/treatments/weight-gain/4.jpg"
     ],
 
     price: 500,
 
-    oldPrice: 650,
+    oldPrice: 748,
 
     discount: 23,
 

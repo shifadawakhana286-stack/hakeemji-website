@@ -13,6 +13,12 @@ import {
 } from "lucide-react";
 
 import Container from "@/components/common/Container";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Medicine Delivery",
+  description: "Learn how Shifa Dawakhana processes and delivers Unani medicines across India.",
+};
 
 export default function FastDeliveryPage() {
   const deliverySteps = [
@@ -263,7 +269,7 @@ export default function FastDeliveryPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/917017530506?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20enquire%20about%20medicine%20delivery."
+                  href="https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20enquire%20about%20medicine%20delivery."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
@@ -966,7 +972,7 @@ export default function FastDeliveryPage() {
               </Link>
 
               <a
-                href="https://wa.me/917017530506?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20place%20a%20medicine%20order."
+                href="https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20place%20a%20medicine%20order."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

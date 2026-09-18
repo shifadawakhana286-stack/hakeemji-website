@@ -2,6 +2,12 @@ import "./natural.css";
 
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Natural Unani Healing",
+  description: "Discover Shifa Dawakhana's natural herbal approach to traditional Unani healthcare.",
+};
 
 import {
   CheckCircle,
@@ -128,7 +134,7 @@ export default function NaturalPage() {
             <div className="natural-image-frame">
 
               <Image
-                src="/features/natural-hero.png"
+                src="/hero/hero-image3.png"
                 alt="Natural Herbs"
                 width={550}
                 height={650}

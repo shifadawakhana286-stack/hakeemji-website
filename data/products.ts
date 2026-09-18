@@ -235,10 +235,37 @@ export const products: Product[] = [
       "/products/madan-manjari.webp",
       "/products/madan-manjari-2.webp",
     ],
-    ingredients: [],
-    uses: [],
-    dosage: "",
-    storage: [],
+    ingredients: [
+    "Swarn Bhasm - 02mg",
+    "Rassindur - 25mg",
+    "Abhrak Bhasm - 25mg",
+    "Bang Bhasm - 25mg",
+    "Pravaal Pishti - 25mg",
+    "Kesar - 25mg",
+    "Jayefal - 25mg",
+    "Javatri - 25mg",
+    "Long - 25mg",
+    "Choti Elaichi - 25mg",
+    "Akarkara - 25mg",
+    "Safed Mirch - 25mg",
+    "Kapoor - 10mg",
+    "Kasturi Ambar - 10mg"
+  ],
+    uses: [
+      "Male Vitality",
+      "Sexual Wellness",
+      "Reduced Libido",
+      "Physical Weakness",
+      "Mental & Physical Fatigue",
+      "Overall Strength and Stamina",
+    ],
+    dosage:
+      "Take 1 tablet with milk in the evening, or as directed by the physician.",
+    storage: [
+      "Store in a cool & dry place.",
+      "Keep away from direct sunlight.",
+      "Keep out of reach of children.",
+    ],
   },
 
   // ============================================================
@@ -1685,7 +1712,26 @@ export const products: Product[] = [
     "/products/kamuni-pachan-majun-2.webp",
   ],
 
-  ingredients: [],
+  ingredients: [
+     "Salam Panja - 5gm",
+     "Imli - 5gm",
+     "Zeera - 5gm", 
+     "Sana - 3gm", 
+     "Kali Mirch - 3gm", 
+     "Elichi - 2gm", 
+     "Sonth - 2gm", 
+     "Arandi - 2gm", 
+     "Elichi - 2gm", 
+     "Podina - 2gm", 
+     "Saunf - 2gm", 
+     "Anwla - 2gm", 
+     "Ajwain - 1gm", 
+     "Siyah Mirch - 1gm", 
+     "Kala Namak - 1gm", 
+     "Pipley - 1gm", 
+     "Hing - 10mg", 
+     "Sugar - 60gm"
+  ],
 
   benefits: [
     "Supports Healthy Digestion",
@@ -1699,7 +1745,7 @@ export const products: Product[] = [
   dosage:
     "Use as directed by the physician or according to the product label.",
 
-  quantity: "",
+  quantity: "250gm",
 
   storage: [
     "Store in a cool and dry place.",
@@ -1732,7 +1778,35 @@ export const products: Product[] = [
     "/products/gold-bhasma-majoon-2.webp",
   ],
 
-  ingredients: [],
+  ingredients: [
+    "Swarna Bhasma",
+    "Vang Bhasma",
+    "Ashwagandha",
+    "Shatavari",
+    "Safed Musli",
+    "Konch Beej",
+    "Godhmar",
+    "Vidarikand",
+    "Shilajit",
+    "Kesar",
+    "Elaichi",
+    "Dalchini",
+    "Jaiphal",
+    "Javitri",
+    "Tejpatta",
+    "Giloy",
+    "Brahmi",
+    "Amla",
+    "Pippali",
+    "Laung",
+    "Talispatra",
+    "Nagkesar",
+    "Akarkara",
+    "Kali Mirch",
+    "Badam Giri",
+    "Khajoor Pushp/Dhup",
+    "Shahad"
+  ],
 
   benefits: [
     "Supports Physical Strength",
@@ -1746,7 +1820,7 @@ export const products: Product[] = [
   dosage:
     "Use as directed by the physician or according to the product label.",
 
-  quantity: "",
+  quantity: "500gm",
 
   storage: [
     "Store in a cool and dry place.",
@@ -1777,7 +1851,30 @@ export const products: Product[] = [
     "/products/gold-lukmani-majoon.webp",
   ],
 
-  ingredients: [],
+  ingredients: [
+    "Swarn Bhasma",
+    "Zafran",
+    "Vang Bhasma",
+    "Roopya Makshik Bhasma",
+    "Shilajeet Shudh - 25mg",
+    "Akarkara - 25mg",
+    "Kulanajan - 25mg",
+    "Salab Mishri - 25mg",
+    "Long - 25mg",
+    "Mazu - 25mg",
+    "Kahu - 25mg",
+    "Dare Sheshan - 25mg",
+    "Khash Khash - 25mg",
+    "Jaiphal - 25mg",
+    "Salam Panja - 25mg",
+    "Darchin - 25mg",
+    "Spand - 25mg",
+    "Javtri - 25mg",
+    "Ajwain Khurasani - 25mg",
+    "Kala Til - 25mg",
+    "Ashwagandha - 25mg",
+    "Honey Pure - 200mg"
+  ],
 
   benefits: [
     "Supports Physical Strength",
@@ -1791,7 +1888,7 @@ export const products: Product[] = [
   dosage:
     "Use as directed by the physician or according to the product label.",
 
-  quantity: "",
+  quantity: "250gm",
 
   storage: [
     "Store in a cool and dry place.",
@@ -1823,7 +1920,26 @@ export const products: Product[] = [
     "/products/sperm-lukmani-majoon-2.webp",
   ],
 
-  ingredients: [],
+  ingredients: [
+    "Shilajeet - 15gm",
+    "Safed Musli - 15gm",
+    "Satawar - 15gm",
+    "Asgandh - 15gm",
+    "Arandi Beej - 20gm",
+    "Tukhme Hulbhul - 25gm",
+    "Gokhru - 20gm",
+    "Samundra Saukh - 20gm",
+    "Beejband - 20gm",
+    "Roomi Mastagi - 20gm",
+    "Tukhme Balangu - 20gm",
+    "Indra Jo Shiri - 20gm",
+    "Taal Makhana - 20gm",
+    "Saunth - 25gm",
+    "Vidarikand - 25gm",
+    "Sh. Vanshlochan - 20gm",
+    "Kala Til - 25gm",
+    "Honey - 180gm"
+  ],
 
   benefits: [
     "Supports Male Vitality",
@@ -1837,7 +1953,7 @@ export const products: Product[] = [
   dosage:
     "Use as directed by the physician or according to the product label.",
 
-  quantity: "",
+  quantity: "500gm",
 
   storage: [
     "Store in a cool and dry place.",
@@ -1865,11 +1981,19 @@ export const products: Product[] = [
     "Takra Vati is an Ayurvedic digestive formulation by Shifa Dawakhana, presented for supporting digestive health, appetite and overall digestive comfort. The product is marketed for concerns such as gas, indigestion and abdominal discomfort.",
 
   images: [
-    "/products/takra-vati.webp",
     "/products/takra-vati-2.webp",
+    "/products/takra-vati.webp",
   ],
 
-  ingredients: [],
+  ingredients: [
+    "Shudh Para - 60mg",
+    "Shudh Gandhak - 60mg",
+    "Shudh Bachnag - 50mg",
+    "Tamra Bhasam - 70mg",
+    "Pipal - 60mg",
+    "Mandur Bhasam - 60mg",
+    "Jeera Ras - 40mg"
+  ],
 
   benefits: [
     "Supports Healthy Digestion",
@@ -1892,5 +2016,65 @@ export const products: Product[] = [
   ],
 },
 
+{
+  id: 38,
+  name: "Pradar Antak",
+  category: "Syrup",
+  mrp: 199,
+  salePrice: 150,
+
+  description:
+    "Pradar Antak is a traditional herbal formulation for women's wellness. The product label presents it for menstrual irregularities, white discharge (Shwet Pradar), back and abdominal discomfort, sexual weakness, burning sensation in the hands and feet, reduced appetite, irritability, and general weakness.",
+
+  shortDescription:
+    "Traditional herbal formulation for women's wellness, menstrual problems, white discharge, and general weakness.",
+
+  seoDescription:
+    "Pradar Antak is a traditional herbal formulation containing Ashok Chaal, Jabheri Jad, Jamun Chaal, and Aam Chaal. It is presented on the product label for women's wellness, menstrual problems, white discharge, back and abdominal discomfort, and general weakness.",
+
+  images: [
+    "/products/pradar_antak_main.png",
+    "/products/pradar_antak.png",
+  ],
+
+  ingredients: [
+    "Ashok Chaal – 50 ml",
+    "Jabheri Jad – 50 ml",
+    "Jamun Chaal – 50 ml",
+    "Aam Chaal – 50 ml",
+  ],
+
+  uses: [
+    "Menstrual Problems",
+    "Menstrual Irregularity",
+    "White Discharge (Shwet Pradar)",
+    "Back Pain",
+    "Abdominal Pain",
+    "Sexual Weakness",
+    "Burning Sensation in Hands & Feet",
+    "Reduced Appetite",
+    "General Weakness",
+  ],
+
+  benefits: [
+    "Supports Menstrual Wellness",
+    "Supports Women's Reproductive Wellness",
+    "Supports General Strength",
+    "Helps Support Overall Women's Wellness",
+  ],
+
+  dosage:
+    "Take 10–15 ml in the morning and evening with water, or as directed by a qualified physician.",
+
+  quantity: "200 ml",
+
+  storage: [
+    "Store in a cool & dry place.",
+    "Keep away from direct sunlight.",
+    "Shake well before use.",
+    "Keep the container tightly closed.",
+    "Keep out of reach of children.",
+  ],
+},
 
 ];

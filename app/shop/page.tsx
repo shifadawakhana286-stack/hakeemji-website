@@ -2,6 +2,12 @@
 
 import Shop from "@/components/home/Shop";
 import BackHomeLink from "@/components/common/BackHomeLink";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Unani Medicines Shop",
+  description: "Browse traditional Unani medicines and herbal formulations from Shifa Dawakhana.",
+};
 
 export default function ShopPage() {
   return (

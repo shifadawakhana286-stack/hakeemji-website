@@ -13,7 +13,6 @@ import {
 
 import Container from "@/components/common/Container";
 import SearchModal from "@/components/search/SearchModal";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { useCart } from "@/hooks/useCart";
 
 export default function Navbar() {
@@ -117,9 +116,6 @@ export default function Navbar() {
 
             {/* Desktop Right Side Controls */}
             <div className="hidden items-center gap-3 lg:flex">
-              {/* Language */}
-              <LanguageSwitcher />
-
               {/* Cart */}
               <Link
                 href="/cart"
@@ -338,10 +334,6 @@ export default function Navbar() {
                     <span>Book Appointment</span>
                   </Link>
 
-                  <div className="flex items-center justify-between px-2 pt-2 text-xs text-gray-500">
-                    <span>Language</span>
-                    <LanguageSwitcher />
-                  </div>
                 </div>
               </div>
             </Container>

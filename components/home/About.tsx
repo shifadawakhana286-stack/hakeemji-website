@@ -171,12 +171,12 @@ export default function About() {
             <div className="about-video-frame">
 
               <video
-
                 ref={videoRef}
-  loop
-  playsInline
-  controls
-
+                loop
+                playsInline
+                controls
+                preload="metadata"
+                poster="/hero/hero-image.png"
                 className="about-video"
 
               >

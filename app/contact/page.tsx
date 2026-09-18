@@ -1,5 +1,11 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Shifa Dawakhana",
+  description: "Contact Shifa Dawakhana in Meerut for Unani healthcare, medicines, and consultations.",
+};
 
 const contactCards = [
   {
@@ -25,7 +31,7 @@ const contactCards = [
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#F8FAF7] text-[#083C2A]">
+    <main className="min-h-screen bg-[#F8FAF7] pt-16 text-[#083C2A] sm:pt-[72px]">
       <section className="relative overflow-hidden bg-[#083C2A] px-4 py-16 sm:px-6 lg:px-8">
         <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#C9A227]/10 blur-3xl" />
         <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-[#0E6C42]/30 blur-3xl" />

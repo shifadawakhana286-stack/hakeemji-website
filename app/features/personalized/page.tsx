@@ -10,6 +10,12 @@ import {
 } from "lucide-react";
 
 import Container from "@/components/common/Container";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Personalized Unani Care",
+  description: "Get personalized guidance based on your concerns, lifestyle, and wellness needs.",
+};
 
 export default function PersonalizedPage() {
   const points = [
@@ -838,7 +844,7 @@ export default function PersonalizedPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/917017530506?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20know%20more%20about%20personalized%20consultation."
+                  href="https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana%2C%20I%20want%20to%20know%20more%20about%20personalized%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
@@ -971,7 +977,7 @@ export default function PersonalizedPage() {
               </Link>
 
               <a
-                href="https://wa.me/917017530506?text=Hello%20Shifa%20Dawakhana%2C%20I%20would%20like%20to%20enquire%20about%20personalized%20consultation."
+                href="https://wa.me/917037305542?text=Hello%20Shifa%20Dawakhana%2C%20I%20would%20like%20to%20enquire%20about%20personalized%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

@@ -13,6 +13,12 @@ import {
 } from "lucide-react";
 
 import Container from "@/components/common/Container";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Trusted Unani Healthcare",
+  description: "Learn about Shifa Dawakhana's trusted traditional Unani healthcare practice.",
+};
 
 const certificates = [
   {

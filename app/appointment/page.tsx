@@ -27,12 +27,7 @@ export default function AppointmentPage() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // ==========================================
-    // APNA WHATSAPP NUMBER YAHAN DALO
-    // Country code ke saath, + ke bina
-    // Example: 919876543210
-    // ==========================================
-    const whatsappNumber = "919876543210";
+    const whatsappNumber = "917037305542";
 
     const whatsappMessage = `
 🩺 *SHIFA DAWAKHANA - APPOINTMENT REQUEST*
@@ -63,7 +58,7 @@ Thank you.
   };
 
   return (
-    <main className="min-h-screen bg-[#F8FAF7]">
+    <main className="min-h-screen bg-[#F8FAF7] pt-16 sm:pt-[72px]">
 
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden bg-[#083C2A] px-4 py-14 sm:px-6 sm:py-20 md:py-28">

@@ -10,13 +10,20 @@ export default function CartToast() {
   const { cartStatus, lastAddedItem, clearCartStatus, totalItems } = useCart();
   const [visible, setVisible] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const showTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (cartStatus === "success" && lastAddedItem) {
-      setVisible(true);
+      showTimerRef.current = setTimeout(() => {
+        setVisible(true);
+      }, 0);
 
       if (timerRef.current) {
         clearTimeout(timerRef.current);
+      }
+
+      if (showTimerRef.current) {
+        clearTimeout(showTimerRef.current);
       }
 
       timerRef.current = setTimeout(() => {

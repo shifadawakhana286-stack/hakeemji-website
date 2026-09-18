@@ -991,7 +991,7 @@ export const treatments: TreatmentPackage[] = [
 
     slug: "weight-gain-package",
 
-    title: "Weight Gain Package   (Men & Women)",
+    title: "Weight Gain Package",
 
     shortDescription:
       "Natural Unani herbal nutrition package to support healthy weight gain, appetite and digestion.",
@@ -999,7 +999,7 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This Unani treatment package is specially formulated for individuals looking to gain healthy weight naturally. It helps support appetite, digestion, liver health and overall nutrition while promoting better energy and wellness.",
 
-    image: "/treatments/weight-gain.jpg",
+    image: "/treatments/weight-gain.webp",
 
     images: [
       "/treatments/weight-gain/1.jpg",

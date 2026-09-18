@@ -24,7 +24,7 @@ export default function Navbar() {
   const navItems = [
     { title: "Home", href: "/" },
     { title: "About", href: "/#about" },
-    { title: "Hakeem", href: "/#hakim" },
+    { title: "Hakeem", href: "/features/expert-hakeem" },
     { title: "Courses", href: "/courses" },
     { title: "Shop", href: "/shop" },
     { title: "Services", href: "/#services" },

@@ -58,11 +58,12 @@ export const treatments: TreatmentPackage[] = [
     details:
       "A 40-day traditional Unani wellness course containing a combination of Majoon, tablets and oil. The course is intended to support men's vitality, stamina, digestive wellness and overall physical wellbeing. The package includes Gold Majoon (Sona Bhasm Wali), Sparm Majoon, Kamini Tablet, Shilajeet Tablet, Takravarti, Pachan Shakti Goli and Badshah Tila Oil.",
 
-    image: "/treatments/special-shaadi-course.jpg",
+    image: "/treatments/course_new_pics/special_shadi_course.webp",
 
     images: [
+      "/treatments/course_new_pics/special_shadi_course.webp",
       "/treatments/special-shaadi-course/1.jpg",
-      "/treatments/special-shaadi-course/2.jpg"
+      "/treatments/special-shaadi-course/2.jpg",
     ],
 
     price: 4500,
@@ -175,9 +176,9 @@ export const treatments: TreatmentPackage[] = [
     details:
       "A specially designed 30-day traditional Unani wellness course containing selected herbal formulations. The course includes tablets, syrups, oil, drops and 30 empty cups. It is intended to provide supportive traditional care for concerns related to ganth, cyst, rasuli and excess body fat. Use the course only under the guidance of a qualified healthcare or Unani practitioner.",
 
-    image: "/treatments/ganth-course.jpg",
-
+    image: "/treatments/course_new_pics/cyst.webp",
     images: [
+      "/treatments/course_new_pics/cyst.webp", 
       "/treatments/ganth-course/1.jpg",
       "/treatments/ganth-course/2.jpg"
       
@@ -299,9 +300,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This Unani treatment package is specially designed to support women's reproductive health. It helps manage leucorrhoea (Likoriya), white discharge, lower back pain, joint pain caused by weakness and overall physical wellness. The package contains carefully selected herbal formulations traditionally used in Unani medicine.",
 
-    image: "/treatments/women-health.jpg",
+    image: "/treatments/course_new_pics/Likoria_women.webp",
 
     images: [
+      "/treatments/course_new_pics/Likoria_women.webp",
       "/treatments/women-health/1.jpg",
       "/treatments/women-health/2.jpg"
       
@@ -396,9 +398,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This herbal Unani package is formulated for men experiencing nightfall (Swapnadosh), Dhaat, reduced vitality, weakness and related reproductive health concerns. The medicines included are traditionally used to support stamina and overall male wellness.",
 
-    image: "/treatments/mens-vitality.jpg",
+    image: "/treatments/course_new_pics/nightfall&Dhaat_Men's_Problem.webp",
 
     images: [
+      "/treatments/course_new_pics/nightfall&Dhaat_Men's_Problem.webp",
       "/treatments/mens-vitality/1.jpg",
       "/treatments/mens-vitality/2.jpg",
       "/treatments/mens-vitality/3.jpg",
@@ -492,9 +495,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This comprehensive Unani treatment package is formulated to support women experiencing PCOD, PCOS, irregular menstrual cycles, pelvic discomfort, mood swings and hormonal imbalance. The package contains traditional herbal medicines that help support reproductive wellness and overall health.",
 
-    image: "/treatments/pcod-pcos.jpg",
+    image: "/treatments/course_new_pics/pcod.webp",
 
     images: [
+      "/treatments/course_new_pics/pcod.webp",
       "/treatments/pcod-pcos/1.jpg",
       "/treatments/pcod-pcos/2.jpg",
       "/treatments/pcod-pcos/3.jpg",
@@ -590,9 +594,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "A traditional Unani herbal package developed to support people suffering from joint pain, lower back pain, muscle discomfort, swelling and stiffness. The medicines help support mobility and day-to-day comfort.",
 
-    image: "/treatments/joint-pain.jpg",
+    image: "/treatments/course_new_pics/joint_pain.webp",
 
     images: [
+      "/treatments/course_new_pics/joint_pain.webp",
       "/treatments/joint-pain.jpg",
       "/treatments/joint-pain.jpg",
       "/treatments/joint-pain.jpg",
@@ -681,9 +686,11 @@ export const treatments: TreatmentPackage[] = [
   details:
     "A 20-day traditional Unani wellness course containing Maharas Nadi Syrup, Loqmani Gold Majoon, Kamini Tablet and Shilajeet Tablet. The package is intended as a traditional wellness formulation for men's health concerns. Use according to the guidance of a qualified healthcare or Unani practitioner.",
 
-  image: "/treatments/mardana-kamzori-course.jpg",
+  image: "/treatments/course_new_pics/Mardana_Kamzori_Care_Course.webp",
+  
 
   images: [
+    "/treatments/course_new_pics/Mardana_Kamzori_Care_Course.webp",
     "/treatments/mardana-kamzori-course/1.jpg",
     "/treatments/mardana-kamzori-course/2.jpg"
   ],
@@ -790,9 +797,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "A comprehensive Unani skin wellness package formulated to support healthy skin by helping with itching, fungal skin conditions, pimples, dark spots and overall skin purification. The medicines are traditionally used to promote cleaner and healthier-looking skin.",
 
-    image: "/treatments/skin-care.jpg",
+    image: "/treatments/course_new_pics/skin_care.webp",
 
     images: [
+      "/treatments/course_new_pics/skin_care.webp",
       "/treatments/skin-care/1.jpg",
       "/treatments/skin-care/2.jpg",
       "/treatments/skin-care/3.jpg",
@@ -885,9 +893,11 @@ export const treatments: TreatmentPackage[] = [
   details:
     "Special 20-day course containing Maharas Nadi Syrup, Dhaatu Musli Powder, Loqmani Gold Majoon, Loqmani Kamuni Majoon, Kamini Tablet and Shilajeet Tablet.",
 
-  image: "/treatments/mardana-kamzori-1800.jpg",
+  image: "/treatments/course_new_pics/mardana_kamzori_lite.webp",
+  
 
   images: [
+    "/treatments/course_new_pics/mardana_kamzori_lite.webp",
     "/treatments/mardana-kamzori-1800/1.jpg",
   ],
 
@@ -999,9 +1009,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This Unani treatment package is specially formulated for individuals looking to gain healthy weight naturally. It helps support appetite, digestion, liver health and overall nutrition while promoting better energy and wellness.",
 
-    image: "/treatments/weight-gain.webp",
+    image: "/treatments/course_new_pics/weight_package.webp",
 
     images: [
+      "/treatments/course_new_pics/weight_package.webp",
       "/treatments/weight-gain/1.jpg",
       "/treatments/weight-gain/2.jpg",
       "/treatments/weight-gain/3.jpg",
@@ -1096,9 +1107,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "A comprehensive Unani treatment package designed for individuals experiencing piles, bleeding piles, pain, itching, burning sensation and constipation. The included medicines support digestive health and overall bowel comfort.",
 
-    image: "/treatments/piles-care.jpg",
+    image: "/treatments/course_new_pics/piles_care.webp",
 
     images: [
+      "/treatments/course_new_pics/piles_care.webp",
       "/treatments/piles-care/1.jpg",
       "/treatments/piles-care/2.jpg",
       "/treatments/piles-care/3.jpg",
@@ -1194,9 +1206,10 @@ export const treatments: TreatmentPackage[] = [
     details:
       "This comprehensive Unani treatment package is designed to support healthy digestion and liver function. It helps manage constipation, gas, acidity, stomach discomfort, fatty liver and weak digestion using traditional herbal formulations.",
 
-    image: "/treatments/weight-gain/1.jpg",
+    image: "/treatments/course_new_pics/Digestive_&_Liver_Care_Package.webp",
 
     images: [
+      "/treatments/course_new_pics/Digestive_&_Liver_Care_Package.webp",
       "/treatments/weight-gain/1.jpg",
       "/treatments/weight-gain/2.jpg",
       "/treatments/weight-gain/3.jpg",

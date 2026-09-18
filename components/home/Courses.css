@@ -328,9 +328,9 @@
    COMMON BUTTON STYLE
 ===================================================== */
 
-.cart-btn,
-.buy-btn,
-.details-btn{
+.course-cart-btn,
+.course-buy-btn,
+.course-details-btn{
     border:none;
     height:44px;
     border-radius:12px;
@@ -348,9 +348,9 @@
                color .25s ease;
 }
 
-.cart-btn:active,
-.buy-btn:active,
-.details-btn:active{
+.course-cart-btn:active,
+.course-buy-btn:active,
+.course-details-btn:active{
     transform:translateY(0) scale(.98);
 }
 
@@ -358,13 +358,13 @@
    ADD TO CART
 ===================================================== */
 
-.cart-btn{
+.course-cart-btn{
     background:#EEF7F2;
     color:#0B5D3B;
     border:1px solid rgba(11,93,59,.10);
 }
 
-.cart-btn:hover{
+.course-cart-btn:hover{
     background:#0B5D3B;
     color:#fff;
     transform:translateY(-2px);
@@ -375,12 +375,12 @@
    BUY NOW
 ===================================================== */
 
-.buy-btn{
+.course-buy-btn{
     color:#fff;
     background:linear-gradient(135deg,#C9A227,#E5C85B);
 }
 
-.buy-btn:hover{
+.course-buy-btn:hover{
     transform:translateY(-2px);
     box-shadow:0 12px 22px -6px rgba(201,162,39,.45);
 }
@@ -389,14 +389,14 @@
    DETAILS BUTTON
 ===================================================== */
 
-.details-btn{
+.course-details-btn{
     width:100%;
     margin-top:4px;
     background:#083C2A;
     color:#fff;
 }
 
-.details-btn:hover{
+.course-details-btn:hover{
     background:#0B5D3B;
     transform:translateY(-2px);
     box-shadow:0 12px 26px -6px rgba(11,93,59,.35);
@@ -406,9 +406,9 @@
    ICONS
 ===================================================== */
 
-.cart-btn svg,
-.buy-btn svg,
-.details-btn svg{
+.course-cart-btn svg,
+.course-buy-btn svg,
+.course-details-btn svg{
     width:17px;
     height:17px;
 }

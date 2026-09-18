@@ -60,6 +60,10 @@ export default function Courses({
     router.push("/cart");
   };
 
+  const handleCardClick = (item: TreatmentPackage) => {
+    router.push(`/treatments/${item.slug}`);
+  };
+
   return (
     <section id="courses" className="courses-section">
       <Container>
@@ -75,7 +79,19 @@ export default function Courses({
             const isWishlisted = wishlist.includes(item.id);
 
             return (
-              <div className="course-card" key={item.id}>
+              <div
+                className="course-card cursor-pointer"
+                key={item.id}
+                onClick={() => handleCardClick(item)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    handleCardClick(item);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+              >
                 {/* Badge */}
                 {item.badge && (
                   <span className="course-badge">{item.badge}</span>
@@ -150,7 +166,7 @@ export default function Courses({
                   <div className="button-row">
                     <button
                       type="button"
-                      className="cart-btn"
+                      className="course-cart-btn"
                       onClick={(e) => handleAddToCart(item, e)}
                       disabled={isAdding}
                       aria-label={`Add ${item.title} to cart`}
@@ -170,7 +186,7 @@ export default function Courses({
 
                     <button
                       type="button"
-                      className="buy-btn"
+                      className="course-buy-btn"
                       onClick={(e) => handleBuyNow(item, e)}
                       aria-label={`Buy ${item.title} now`}
                     >
@@ -181,7 +197,7 @@ export default function Courses({
 
                   <Link
                     href={`/treatments/${item.slug}`}
-                    className="details-btn"
+                    className="course-details-btn"
                   >
                     <Eye size={16} />
                     <span>View Details</span>

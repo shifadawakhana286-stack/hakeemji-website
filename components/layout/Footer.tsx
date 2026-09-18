@@ -188,7 +188,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.youtube.com/@shifadawakhana786"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#C9A227]"
                 aria-label="YouTube"
               >

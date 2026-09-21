@@ -231,16 +231,34 @@
     border-bottom:1px solid rgba(11,93,59,.08);
 }
 
-.stars{
+.rating-stars{
     display:flex;
     align-items:center;
     gap:3px;
 }
 
-.stars svg{
+.rating-star{
+    position:relative;
+    display:inline-flex;
     color:#D4A017;
-    width:15px;
-    height:15px;
+}
+
+.rating-star > svg{
+    display:block;
+}
+
+.rating-star-fill{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    overflow:hidden;
+    color:#C9A227;
+}
+
+.rating-star-fill svg{
+    display:block;
+    max-width:none;
 }
 
 .rating{
@@ -552,7 +570,8 @@
         font-size:12px;
     }
 
-    .stars svg{
+    .rating-star > svg,
+    .rating-star-fill svg{
         width:12px;
         height:12px;
     }

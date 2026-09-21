@@ -230,11 +230,16 @@ export default function Footer() {
 
             </p>
 
-            <p>
-
-              Authentic Unani & Herbal Healthcare
-
-            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:justify-end">
+              <Link
+                href="/privacy-policy"
+                className="transition hover:text-[#C9A227]"
+              >
+                Privacy Policy
+              </Link>
+              <span aria-hidden="true">|</span>
+              <span>Authentic Unani & Herbal Healthcare</span>
+            </div>
 
           </div>
 

@@ -214,8 +214,8 @@ export const treatments: TreatmentPackage[] = [
       "Udaramrit Yog Syrup - 200ml × 3",
       "Cyst Syrup - 200ml × 3",
       "Chandanvalaksayadi Oil",
-      "Cyst Drop - 15ml × 2",
-      "30 Cup Khali"
+      // "Cyst Drop - 15ml × 2",
+      // "30 Cup Khali"
     ],
 
     benefits: [
@@ -630,7 +630,8 @@ export const treatments: TreatmentPackage[] = [
     medicines: [
       "Pain Remedy Syrup (200ml)",
       "Madan Manjari Tablet (30 Vati)",
-      "Ortho Pain Relief Oil (50ml)"
+      "Ortho Pain Relief Oil (50ml)",
+      "Amir Uric Acid Tablet (20 Vati)"
     ],
 
     benefits: [
@@ -705,7 +706,7 @@ export const treatments: TreatmentPackage[] = [
 
   duration: "20 Days",
 
-  rating: 0,
+  rating: 4.6,
 
   badge: "Special Course",
 
@@ -720,8 +721,11 @@ export const treatments: TreatmentPackage[] = [
 
   medicines: [
     "Maharas Nadi Syrup - 200ml",
+    "Dhaatu Musli Powder - 100gm",
+    "Shilajeetyati Tablet - 20 Pills",
+    "Kamini Vati with kesar - 20 Pills",
+    "Kamuni Majoon - 250gm",
     "Loqmani Gold Majoon - 250gm",
-    "Kamini Tablet - 20 Pills",
     "Shilajeet Tablet - 20 Pills"
   ],
 
@@ -911,7 +915,7 @@ export const treatments: TreatmentPackage[] = [
 
   duration: "20 Days",
 
-  rating: 0,
+  rating: 4.9,
 
   badge: "Special Course",
 
@@ -926,11 +930,9 @@ export const treatments: TreatmentPackage[] = [
 
   medicines: [
     "Maharas Nadi Syrup - 200ML",
-    "Dhaatu Musli Powder - 100GM",
-    "Loqmani Gold Majoon - 250GM",
-    "Loqmani Kamuni Majoon - 250GM",
-    "Kamini Tablet - 20 Pills",
-    "Shilajeet Tablet - 20 Pills"
+    "Shilajeetyadi Tablet - 20 Pills",
+    "Kamini Vidravan ras",
+    "Loqmani Gold Majoon - 250GM",    
   ],
 
   benefits: [

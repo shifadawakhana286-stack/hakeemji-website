@@ -26,6 +26,39 @@ import {
 } from "@/data/treatments";
 import { useCart } from "@/hooks/useCart";
 
+function RatingStars({
+  rating,
+  size,
+}: {
+  rating: number;
+  size: number;
+}) {
+  const normalizedRating = Math.max(0, Math.min(rating, 5));
+
+  return (
+    <div className="rating-stars" aria-label={`${rating} out of 5 stars`}>
+      {[1, 2, 3, 4, 5].map((star) => {
+        const fillPercent = Math.max(
+          0,
+          Math.min(100, (normalizedRating - star + 1) * 100)
+        );
+
+        return (
+          <span className="rating-star" key={star}>
+            <Star size={size} fill="none" color="#C9A227" />
+            <span
+              className="rating-star-fill"
+              style={{ width: `${fillPercent}%` }}
+            >
+              <Star size={size} fill="currentColor" color="currentColor" />
+            </span>
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Courses({
   showAll = false,
 }: {
@@ -129,16 +162,7 @@ export default function Courses({
 
                   {/* Rating */}
                   <div className="rating-row">
-                    <div className="stars">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Star
-                          key={star}
-                          size={14}
-                          fill="#C9A227"
-                          color="#C9A227"
-                        />
-                      ))}
-                    </div>
+                    <RatingStars rating={item.rating} size={14} />
 
                     <span className="rating">{item.rating}</span>
                   </div>
@@ -265,14 +289,7 @@ export default function Courses({
                 <h2>{selectedTreatment.title}</h2>
 
                 <div className="modal-rating">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star
-                      key={star}
-                      size={18}
-                      fill="#C9A227"
-                      color="#C9A227"
-                    />
-                  ))}
+                  <RatingStars rating={selectedTreatment.rating} size={18} />
 
                   <span>{selectedTreatment.rating}</span>
                 </div>

@@ -300,9 +300,10 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/Likoria_women.webp",
 
     images: [
-      "/treatments/course_new_pics/Likoria_women.webp",
-      "/treatments/women-health/1.jpg",
-      "/treatments/women-health/2.jpg"
+      "/treatments/courses_new_images(2)/likoria.png",
+      // "/treatments/course_new_pics/Likoria_women.webp",
+      // "/treatments/women-health/1.jpg",
+      // "/treatments/women-health/2.jpg"
       
     ],
 

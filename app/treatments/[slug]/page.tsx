@@ -70,7 +70,10 @@ export default async function TreatmentPage({ params }: Props) {
       <section className="product-top">
 
         <ProductGallery
-          images={treatment.images}
+          images={[
+            treatment.image,
+            ...treatment.images.filter((image) => image !== treatment.image),
+          ]}
           title={treatment.title}
         />
 

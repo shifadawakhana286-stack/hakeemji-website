@@ -61,9 +61,7 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/special_shadi_course.webp",
 
     images: [
-      "/treatments/course_new_pics/special_shadi_course.webp",
-      "/treatments/special-shaadi-course/1.jpg",
-      "/treatments/special-shaadi-course/2.jpg",
+      "/treatments/courses_new_images(2)/shadi.webp",
     ],
 
     price: 4500,
@@ -178,9 +176,8 @@ export const treatments: TreatmentPackage[] = [
 
     image: "/treatments/course_new_pics/cyst.webp",
     images: [
-      "/treatments/course_new_pics/cyst.webp", 
-      "/treatments/ganth-course/1.jpg",
-      "/treatments/ganth-course/2.jpg"
+    "/treatments/courses_new_images(2)/cyst.webp",
+
       
     ],
 
@@ -401,11 +398,8 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/nightfall&Dhaat_Men's_Problem.webp",
 
     images: [
-      "/treatments/course_new_pics/nightfall&Dhaat_Men's_Problem.webp",
-      "/treatments/mens-vitality/1.jpg",
-      "/treatments/mens-vitality/2.jpg",
-      "/treatments/mens-vitality/3.jpg",
-      "/treatments/mens-vitality/4.jpg"
+    "/treatments/courses_new_images(2)/Nightfall.webp",
+
     ],
 
     price: 500,
@@ -498,11 +492,13 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/pcod.webp",
 
     images: [
-      "/treatments/course_new_pics/pcod.webp",
-      "/treatments/pcod-pcos/1.jpg",
-      "/treatments/pcod-pcos/2.jpg",
-      "/treatments/pcod-pcos/3.jpg",
-      "/treatments/pcod-pcos/1.jpg"
+    "/treatments/courses_new_images(2)/pcod.webp",
+
+      // "/treatments/course_new_pics/pcod.webp",
+      // "/treatments/pcod-pcos/1.jpg",
+      // "/treatments/pcod-pcos/2.jpg",
+      // "/treatments/pcod-pcos/3.jpg",
+      // "/treatments/pcod-pcos/1.jpg"
     ],
 
     price: 1500,
@@ -597,11 +593,13 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/joint_pain.webp",
 
     images: [
-      "/treatments/course_new_pics/joint_pain.webp",
-      "/treatments/joint-pain.jpg",
-      "/treatments/joint-pain.jpg",
-      "/treatments/joint-pain.jpg",
-      "/treatments/joint-pain.jpg"
+      "/treatments/courses_new_images(2)/joint_pain.webp",
+
+      // "/treatments/course_new_pics/joint_pain.webp",
+      // "/treatments/joint-pain.jpg",
+      // "/treatments/joint-pain.jpg",
+      // "/treatments/joint-pain.jpg",
+      // "/treatments/joint-pain.jpg"
     ],
 
     price: 500,
@@ -691,9 +689,11 @@ export const treatments: TreatmentPackage[] = [
   
 
   images: [
-    "/treatments/course_new_pics/Mardana_Kamzori_Care_Course.webp",
-    "/treatments/mardana-kamzori-course/1.jpg",
-    "/treatments/mardana-kamzori-course/2.jpg"
+  "/treatments/courses_new_images(2)/mardana_care.webp",
+
+    // "/treatments/course_new_pics/Mardana_Kamzori_Care_Course.webp",
+    // "/treatments/mardana-kamzori-course/1.jpg",
+    // "/treatments/mardana-kamzori-course/2.jpg"
   ],
 
   price: 1800,
@@ -804,11 +804,12 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/skin_care.webp",
 
     images: [
-      "/treatments/course_new_pics/skin_care.webp",
-      "/treatments/skin-care/1.jpg",
-      "/treatments/skin-care/2.jpg",
-      "/treatments/skin-care/3.jpg",
-      "/treatments/skin-care/4.jpg"
+      "/treatments/courses_new_images(2)/skin_care.webp",
+      // "/treatments/course_new_pics/skin_care.webp",
+      // "/treatments/skin-care/1.jpg",
+      // "/treatments/skin-care/2.jpg",
+      // "/treatments/skin-care/3.jpg",
+      // "/treatments/skin-care/4.jpg"
     ],
 
     price: 450,
@@ -901,8 +902,9 @@ export const treatments: TreatmentPackage[] = [
   
 
   images: [
-    "/treatments/course_new_pics/mardana_kamzori_lite.webp",
-    "/treatments/mardana-kamzori-1800/1.jpg",
+    "/treatments/courses_new_images(2)/Mardana_Kamzori_Lite_Course.webp"
+    // "/treatments/course_new_pics/mardana_kamzori_lite.webp",
+    // "/treatments/mardana-kamzori-1800/1.jpg",
   ],
 
   price: 1300,
@@ -1014,11 +1016,12 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/weight_package.webp",
 
     images: [
-      "/treatments/course_new_pics/weight_package.webp",
-      "/treatments/weight-gain/1.jpg",
-      "/treatments/weight-gain/2.jpg",
-      "/treatments/weight-gain/3.jpg",
-      "/treatments/weight-gain/4.jpg"
+      "/treatments/courses_new_images(2)/weight_gain.webp",
+      // "/treatments/course_new_pics/weight_package.webp",
+      // "/treatments/weight-gain/1.jpg",
+      // "/treatments/weight-gain/2.jpg",
+      // "/treatments/weight-gain/3.jpg",
+      // "/treatments/weight-gain/4.jpg"
     ],
 
     price: 500,
@@ -1112,11 +1115,12 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/piles_care.webp",
 
     images: [
-      "/treatments/course_new_pics/piles_care.webp",
-      "/treatments/piles-care/1.jpg",
-      "/treatments/piles-care/2.jpg",
-      "/treatments/piles-care/3.jpg",
-      "/treatments/piles-care/4.jpg"
+      "/treatments/courses_new_images(2)/piles.webp",
+      // "/treatments/course_new_pics/piles_care.webp",
+      // "/treatments/piles-care/1.jpg",
+      // "/treatments/piles-care/2.jpg",
+      // "/treatments/piles-care/3.jpg",
+      // "/treatments/piles-care/4.jpg"
     ],
 
     price: 550,
@@ -1211,11 +1215,12 @@ export const treatments: TreatmentPackage[] = [
     image: "/treatments/course_new_pics/Digestive_&_Liver_Care_Package.webp",
 
     images: [
-      "/treatments/course_new_pics/Digestive_&_Liver_Care_Package.webp",
-      "/treatments/weight-gain/1.jpg",
-      "/treatments/weight-gain/2.jpg",
-      "/treatments/weight-gain/3.jpg",
-      "/treatments/weight-gain/4.jpg"
+      "/treatments/courses_new_images(2)/digestive.webp",
+      // "/treatments/course_new_pics/Digestive_&_Liver_Care_Package.webp",
+      // "/treatments/weight-gain/1.jpg",
+      // "/treatments/weight-gain/2.jpg",
+      // "/treatments/weight-gain/3.jpg",
+      // "/treatments/weight-gain/4.jpg"
     ],
 
     price: 500,
